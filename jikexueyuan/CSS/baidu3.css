@@ -1,0 +1,393 @@
+﻿body {
+    font-size: 13px; /*通过审查元素，查找百度首页的字体大小*/
+    font-family: Arial; /*以及使用哪种字体*/
+    overflow: hidden; /*清除浮动*/
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    min-height: 600px;
+    min-width: 810px;
+    position: relative;
+}
+
+/*顶部导航栏*/
+.header {
+    overflow: hidden; /*清除浮动，为下级标签设置浮动做铺垫*/
+    font-weight: bold;
+}
+
+.nav {
+    position: relative;
+    margin-top: 19px;
+    float: right; /*设置向右浮动*/
+    width: 500px; /*设置nav标签的长度*/
+    *width:535px;
+}
+
+    .nav a {
+        color: rgb(85,85,85);
+        margin-left: 19px; /*给每一个a标签的margin设一个19px的左宽度，可以作为各标签之间的间距。*/
+    }
+
+/*让鼠标移动到链接上变色*/
+.nav_list:hover {
+    color: rgb(0,0,204);
+}
+
+.more_1_morelist {
+    display: inline-block;
+    /*兼容ie8*/
+    *display: inline;
+    zoom: 1;
+}
+
+.more_1 {
+    font-weight: 400;
+}
+
+.nav .more_1_list {
+    display: none;
+    position: fixed;
+    /*兼容性*/
+    box-shadow: rgb(209,209,209) 1px 1px 5px 0px;
+    -webkit-box-shadow: rgb(209,209,209) 1px 1px 5px 0px;
+    -moz-box-shadow: rgb(209,209,209) 1px 1px 5px 0px;
+    filter: progid:DXI mageTransform.Microsoft.Shadow(color='rgb(209,209,209)', Direction=125, Strength=9);
+    right: 70px;
+    top: 45px;
+    padding: 0px;
+}
+
+.more_1_list_arrows {
+    width: 0px;
+    height: 0px;
+    /*兼容性*/
+    border-top: 5px dashed transparent;
+    border-right: 5px dashed transparent;
+    border-bottom: 5px solid rgb(255,255,255);
+    border-left: 5px dashed transparent;
+}
+
+/*设置下拉栏小箭头*/
+.more_1_list_arrows {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+    .more_1_list_arrows em, .more_1_list_arrows i {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        position: absolute;
+        border: 5px solid transparent;
+        border-style: dashed dashed solid;
+    }
+
+    .more_1_list_arrows em {
+        border-bottom-color: #d8d8d8;
+        top: -1px;
+    }
+
+    .more_1_list_arrows i {
+        border-bottom-color: #fff;
+        top: 0;
+    }
+
+.nav .more_1_list a {
+    display: block;
+    color: rgb(0,0,0);
+    padding: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 70px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.more_1_list_more {
+    border: 1px solid rgb(209,209,209);
+}
+
+.more_1_list_a_1:hover, .more_1_list_a_2:hover, .more_1_list_a_3:hover, .more_1_list_a_4:hover {
+    background-color: rgb(51,136,255);
+    color: rgb(255,255,255);
+}
+
+.more_1_morelist:hover div {
+    display: block;
+    transition-delay: 1s;
+}
+
+.more_2_morelist {
+    display: inline-block;
+    /*兼容ie8*/
+    *display: inline;
+    zoom: 1;
+}
+
+    .more_2_morelist .more_2 {
+        display: inline-block;
+        /*兼容ie8*/
+        *display: inline;
+        zoom: 1;
+        text-align: center;
+        font-weight: 400;
+        vertical-align: middle;
+    margin-left: 15px;
+        line-height: 24px; /*如何设置文字垂直居中，先把行高设置和外高一样，然后再设成垂直居中*/
+        height: 24px;
+        width: 60px;
+        color: rgb(255,255,255);
+        background-color: rgb(51,136,255);
+    }
+
+.more_2_list {
+    display: none;
+    background-color: rgb(249,249,249);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 85px;
+    height: 100%;
+    font-weight: 400;
+    border-left: 1px solid rgb(231,231,231);
+}
+
+    .more_2_list .more_2_list_head {
+        position: relative;
+        text-align: center;
+        padding-top: 9px;
+        margin: 0px 9.5px;
+        height: 43px;
+        width: 66px;
+        vertical-align: middle;
+        line-height: 43px;
+        border-bottom: 1px solid rgb(240,240,240);
+    }
+
+    .more_2_list .more_2_list_more {
+        position: relative;
+        text-align: center;
+    }
+
+        .more_2_list .more_2_list_more a {
+            display: inline-block;
+            /*兼容ie8*/
+            *display: inline;
+            zoom: 1;
+            margin: 0px 9.5px;
+            padding: 0px;
+            text-align: center;
+            color: rgb(102,102,102);
+        }
+
+        .more_2_list .more_2_list_more span {
+            color: rgb(51,51,51);
+        }
+
+.more_2_list_a_1, .more_2_list_a_2, .more_2_list_a_3, .more_2_list_a_4, .more_2_list_a_5 {
+    margin: 0px 9.5px;
+    border-bottom: 1px solid rgb(240,240,240);
+    width: 66px;
+    height: 76px;
+}
+
+.more_2_list_more span {
+    margin: 10px 15px 5px 15px;
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-align: center;
+}
+
+
+.more_2_list .more_2_list_more .more_2_list_a_1 span {
+    background-image: url(../Image/baidu/more_music.png);
+    margin: 10px 13px 5px 13px;
+    width: 40px;
+}
+
+.more_2_list .more_2_list_more .more_2_list_a_2 span {
+    background-image: url(../Image/baidu/more_image.png);
+}
+
+.more_2_list .more_2_list_more .more_2_list_a_3 span {
+    background-image: url(../Image/baidu/more_zhidao.png);
+}
+
+.more_2_list .more_2_list_more .more_2_list_a_4 span {
+    background-image: url(../Image/baidu/more_wenku.png);
+}
+
+.more_2_list .more_2_list_more .more_2_list_a_5 span {
+    background-image: url(../Image/baidu/more_bang.png);
+}
+
+.more_2_list .more_2_list_more .more_2_list_a_6 {
+    display: inline-block;
+    /*兼容ie8*/
+    *display: inline;
+    zoom: 1;
+    padding-top: 20px;
+    white-space: nowrap; /*禁止换行*/
+}
+
+.more_2_morelist:hover div {
+    display: block;
+    transition-delay: 1s;
+}
+
+header a:link, header a:visited, header a:active {
+    color: rgb(0,0,0); /*百度首页上的这个链接，也是无论如何操作都是显示黑色。*/
+}
+
+/*页面内容*/
+.content {
+    text-align: center; /*注意：仅对行内元素起作用。*/
+    margin: 0px;
+    padding-top: 140px;
+}
+
+    .content img {
+        width: 270px;
+        height: 129px; /*如果只设置宽度，那么图片会根据宽度等比例缩放，所以在需要图片等比例缩放的时候，高度可以忽略不写，但建议宽高都指定好。*/
+        padding-bottom: 10px;
+    }
+
+    .content form {
+        width: 640px;
+        height: 36px;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    .content .content_input {
+        width: 539px;
+        height: 34px;
+        float: left;
+    }
+
+    .content .camera {
+        width: 18px;
+        height: 18px;
+        background: url(../Image/baidu/baidu_camera.png) no-repeat;
+        position: absolute;
+        top: 10px;
+        left: 505px;
+        cursor: pointer;
+    }
+
+        .content .camera:hover {
+            background-position: 0 -20px;
+        }
+
+    .content .content_input input {
+        display: inline-block;
+        /*兼容ie8*/
+        *display: inline;
+        zoom: 1;
+        padding-top: 6px;
+        padding-left: 7px;
+        padding-right: 52px;
+        padding-bottom: 6px;
+        margin: 0px;
+        border: 1px solid;
+        border-right: 0px;
+        background-color: rgb(255, 255, 255);
+        border-top-color: rgb(184,184,184);
+        border-top-width: 1px;
+        border-left-color: rgb(184,184,184);
+        border-left-width: 1px;
+        border-right-width: 0px;
+        border-bottom-color: rgb(204, 204, 204);
+        border-bottom-width: 1px;
+        outline: none;
+        width: 480px;
+        height: 22px;
+        float: left;
+        outline: none;
+    }
+
+        .content .content_input input:hover {
+            border-color: rgb(153,153,153);
+            border-bottom-color: rgb(179, 179, 179);
+        }
+
+    .content button {
+        background-color: rgb(51, 136, 255);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        border-color: rgb(51, 136, 255);
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        margin: 0px;
+        padding: 0px;
+        width: 100px;
+        height: 36px;
+        float: left;
+    }
+
+/*页面底部*/
+.footer {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.footer-qrcode, .footer-help, .footer-police {
+    color: rgb(153,153,153);
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-qrcode {
+    text-align: center;
+}
+
+    .footer-qrcode img {
+        height: 60px;
+    }
+
+    .footer-qrcode span {
+        display: block;
+        font-weight: 700;
+        color: rgb(102,102,102);
+        text-align: center;
+    }
+
+.footer-help a {
+    margin-left: 25px;
+}
+
+.footer-police img {
+    width: 14px;
+}
+
+.footer-help a:link, .footer-help a:visited, .footer-help a:hover, .footer-help a:active {
+    color: rgb(153,153,153);
+}
+
+.footer-police a:link, .footer-police a:visited, .footer-police a:hover, .footer-police a:active {
+    color: rgb(153,153,153);
+}

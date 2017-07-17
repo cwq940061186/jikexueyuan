@@ -1,0 +1,14 @@
+﻿body {
+
+}
+
+.main-head-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 60px;
+    background-color: #fcfcfc;
+    opacity: .2;
+}

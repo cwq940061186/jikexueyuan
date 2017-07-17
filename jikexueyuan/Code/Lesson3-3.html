@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>百度一下，你就知道。</title>
+    <link rel="shortcut icon" href="../Image/baidu_shortcut.ico" /><!--引入icon，作为网页标签的icon-->
+    <link rel="stylesheet" href="../CSS/baidu3.css" /><!--引入外部CSS-->
+
+</head>
+<body>
+    <div class="wrapper">
+        <!--编程习惯：使用div作为一个副容器。-->
+        <div class="header">
+            <!--顶部导航栏-->
+            <!--使用ul标签也同样可以达到效果，但使用H5新增的header标签会使代码更语义化-->
+            <!--Web语义化：是指使用语义恰当的标签，使页面有良好的结构，页面元素有含义，能够让人和搜索引擎都容易理解。-->
+            <div class="nav">
+                <a href="http://www.nuomi.com/?cid=002540" target="_blank" class="nav_list">糯米</a>
+                <a href="http://news.baidu.com/" target="_blank" class="nav_list">新闻</a>
+                <a href="http://www.hao123.com/" target="_blank" class="nav_list">hao123</a>
+                <a href="http://map.baidu.com/" target="_blank" class="nav_list">地图</a>
+                <a href="http://v.baidu.com/" target="_blank" class="nav_list">视频</a>
+                <a href="http://tieba.baidu.com/" target="_blank" class="nav_list">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" target="_blank" class="nav_list" style="font-weight:400;">登陆</a>
+
+                <div class="more_1_morelist">
+                    <!--设置-下拉列表-->
+                    <a class="more_1">设置</a>
+                    <div class="more_1_list">
+                        <div class="more_1_list_arrows"><em></em><i></i></div><!--设置-下拉列表-列表小箭头-->
+                        <div class="more_1_list_more">
+                            <!--设置-下拉列表本体-->
+                            <a href="javascript:;" target="_blank" class="more_1_list_a_1">搜索设置</a>
+                            <a href="https://www.baidu.com/gaoji/advanced.html" target="_blank" class="more_1_list_a_2">高级搜索</a>
+                            <a href="javascript:;" target="_blank" class="more_1_list_a_3">关闭预测</a>
+                            <a href="javascript:;" target="_blank" class="more_1_list_a_4">搜索历史</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more_2_morelist">
+                    <!--更多产品-下拉列表-->
+                    <a class="more_2">更多产品</a>
+                    <div class="more_2_list">
+                        <div class="more_2_list_head">更多产品</div>
+                        <div class="more_2_list_more">
+                            <a href="http://music.baidu.com/" target="_blank" class="more_2_list_a_1"><span></span>音乐</a>
+                            <a href="http://image.baidu.com/" target="_blank" class="more_2_list_a_2"><span></span>图片</a>
+                            <a href="http://zhidao.baidu.com/" target="_blank" class="more_2_list_a_3"><span></span>知道</a>
+                            <a href="http://wenku.baidu.com/" target="_blank" class="more_2_list_a_4"><span></span>文库</a>
+                            <a href="http://top.baidu.com/" target="_blank" class="more_2_list_a_5"><span></span>风云榜</a>
+                            <a href="https://www.baidu.com/more/" target="_blank" class="more_2_list_a_6">全部产品>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!--页面内容-->
+            <img src="../Image/baidu/baidu_logo.png" alt="baidu" title="百度一下，你就知道。" />
+            <!--百度logo-->
+            <form action="http://www.baidu.com/s" method="get" target="_blank">
+                <!--搜索输入栏-->
+                <div class="content_input">
+                    <input class="content_input" type="text" name="wd" maxlength="100" />
+                    <span class="camera"></span>
+                </div>
+                <button type="submit">百度一下</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <!--页面底部-->
+            <p class="footer-qrcode">
+                <!--手机百度二维码-->
+                <img src="../Image/baidu/baidu_qrcode.png" />
+                <span>手机百度</span>
+            </p>
+            <p class="footer-help">
+                <!--帮助内容-->
+                <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+                <a href="http://home.baidu.com/" target="_blank">关于百度</a>
+                <a href="http://ir.baidu.com/" target="_blank">About  Baidu</a>
+                <a href="http://e.baidu.com/?refer=888" target="_blank">百度推广</a>
+            </p>
+            <p class="footer-police">
+                <!--网警信息-->
+                &nbsp;©2016&nbsp;Baidu
+                <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/" target="_blank">意见反馈</a>
+                京ICP证030173号
+                <img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/copy_rignt_24.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">京公网安备11000002000001号</a>
+                <img src="http://www.beian.gov.cn/img/beianbgs.png" />
+            </p>
+        </div>
+    </div>
+</body>
+</html>

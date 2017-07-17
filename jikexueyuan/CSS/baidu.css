@@ -1,0 +1,125 @@
+﻿body {
+    font-size: 13px; /*通过审查元素，查找百度首页的字体大小*/
+    font-family: Arial; /*以及使用哪种字体*/
+    overflow: hidden; /*清除浮动*/
+}
+
+/*顶部导航栏*/
+header {
+    overflow: hidden; /*清除浮动，为下级标签设置浮动做铺垫*/
+    font-weight: bold;
+}
+
+    header nav {
+        width: 410px; /*设置nav标签的长度*/
+        float: right; /*设置向右浮动*/
+    }
+
+        header nav a {
+            color: rgb(85,85,85);
+            margin-left: 19px; /*给每一个a标签的margin设一个19px的左宽度，可以作为各标签之间的间距。*/
+        }
+
+.h_a7, .h_a8 {
+    font-weight: 400;
+}
+
+header a:link, header a:visited, header a:hover, header a:active {
+    color: black; /*百度首页上的这个链接，也是无论如何操作都是显示黑色。*/
+}
+
+/*页面内容*/
+.content {
+    text-align: center; /*注意：仅对行内元素起作用。*/
+    margin: 0px;
+    padding-top: 140px;
+}
+
+    .content form {
+        width: 640px;
+        height: 40px;
+        margin: 10px auto;
+        position: relative;
+    }
+
+    .content img {
+        width: 270px;
+        height: 129px; /*如果只设置宽度，那么图片会根据宽度等比例缩放，所以在需要图片等比例缩放的时候，高度可以忽略不写，但建议宽高都指定好。*/
+        padding-bottom: 10px;
+    }
+
+    .content span {
+        width: 536px;
+        height: 40px;
+    }
+
+    .content input {
+        background-color: rgb(255, 255, 255);
+        border-top-color: rgb(184,184,184);
+        border-top-width: 1px;
+        border-left-color: rgb(184,184,184);
+        border-left-width: 1px;
+        border-right-width: 0px;
+        border-bottom-color: rgb(204, 204, 204);
+        border-bottom-width: 1px;
+        border: 1px solid #ccc;
+        padding: 9px 7px;
+        width: 480px;
+        height: 20px;
+        float: left;
+    }
+
+    .content .camera {
+        width:18px;
+        height:18px;
+        background: url(../Image/baidu_camera.png) no-repeat;
+        position: absolute;
+        top: 10px;
+        left: 470px;
+        cursor:pointer;
+    }
+
+        .content .camera:hover {
+            background-position: 0 -20px;
+        }
+
+
+    .content button {
+        background-color: rgb(51, 136, 255);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        border-color: rgb(51, 136, 255);
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        margin: 0px;
+        padding: 0px;
+        width: 104px;
+        height: 40px;
+        float: left;
+    }
+
+/*脚步部分*/
+footer {
+    height: 80px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.copy-right, .police {
+    color: grey;
+    font-size: 12px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+    .copy-right a:link, .copy-right a:visited, .copy-right a:hover, .copy-right a:active {
+        color: grey;
+    }
+
+    .police a:link, .police a:visited, .police a:hover, .police a:active {
+        color: grey;
+        text-decoration: none;
+    }

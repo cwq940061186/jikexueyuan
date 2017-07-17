@@ -1,0 +1,77 @@
+﻿body {
+    font-family: 'Microsoft YaHei';
+}
+
+/*网页头部和底部*/
+header, footer {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: rgb(255,255,255);
+    border-width: 20px 20px 0px 20px;
+    border-radius: 10px;
+    background-color: rgb(240,240,240);
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+
+    header h1 {
+        margin: 0 auto;
+    }
+
+footer {
+    text-align: center;
+}
+
+/*网页主体（双飞翼布局）*/
+.article {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+/*双飞翼布局*/
+.left, .middle, .right {
+    margin-bottom: -9999px;
+    padding: 20px 20px 9999px;
+    border: 20px solid rgb(255,255,255);
+    background-color: rgb(240,240,240);
+    background-clip: padding-box;
+    box-sizing: border-box;
+    float: left;
+}
+
+/*双飞翼布局-主体*/
+.middle {
+    width: 100%;
+    float: left;
+}
+
+    .middle .inner {
+        line-height: 2em;
+        text-indent: 2em;
+        padding: 0 350px;
+    }
+
+/*双飞翼布局-左侧*/
+.left {
+    width: 350px;
+    margin-left: -100%;
+}
+
+    .left img {
+        width: 100%;
+    }
+
+
+/*双飞翼布局-右侧*/
+.right {
+    margin-left: -350px;
+    left: 350px;
+    width: 350px;
+}
+
+    .right ol {
+        line-height: 2em;
+    }

@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>百度一下，你就知道。</title>
+    <link rel="shortcut icon" href="../Image/baidu_shortcut.ico" /><!--引入icon，作为网页标签的icon-->
+    <link rel="stylesheet" href="../CSS/baidu4.css" media="screen and (min-width:401px)" /><!--引入外部CSS，当screen大于400px时，应用此css样式-->
+    <link rel="stylesheet" href="../CSS/baidu-media.css" media="screen and (max-width:400px)" /><!--引入外部CSS，当screen小于400px时，应用此css样式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"><!--要想在移动端也能用上响应式，必须加上这句话！-->
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!--编程习惯：使用div作为一个副容器。-->
+        <div class="header">
+            <!--顶部导航栏-->
+            <!--使用ul标签也同样可以达到效果，但使用H5新增的header标签会使代码更语义化-->
+            <!--Web语义化：是指使用语义恰当的标签，使页面有良好的结构，页面元素有含义，能够让人和搜索引擎都容易理解。-->
+            <div class="nav">
+                <a href="http://www.nuomi.com/?cid=002540" target="_blank" class="nav_list">糯米</a>
+                <a href="http://news.baidu.com/" target="_blank" class="nav_list">新闻</a>
+                <a href="http://www.hao123.com/" target="_blank" class="nav_list">hao123</a>
+                <a href="http://map.baidu.com/" target="_blank" class="nav_list">地图</a>
+                <a href="http://v.baidu.com/" target="_blank" class="nav_list">视频</a>
+                <a href="http://tieba.baidu.com/" target="_blank" class="nav_list">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" target="_blank" class="nav_list" style="font-weight:400;">登陆</a>
+                <div class="more_1_morelist">
+                    <!--设置-下拉列表-->
+                    <a class="more_1">设置</a>
+                    <div class="more_1_list">
+                        <div class="more_1_list_arrows"><em></em><i></i></div><!--设置-下拉列表-列表小箭头-->
+                        <div class="more_1_list_more">
+                            <!--设置-下拉列表本体-->
+                            <a href="javascript:;" target="_blank" class="more_1_list_a_1">搜索设置</a>
+                            <a href="https://www.baidu.com/gaoji/advanced.html" target="_blank" class="more_1_list_a_2">高级搜索</a>
+                            <a href="javascript:;" target="_blank" class="more_1_list_a_3">关闭预测</a>
+                            <a href="javascript:;" target="_blank" class="more_1_list_a_4">搜索历史</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more_2_morelist">
+                    <!--更多产品-下拉列表-->
+                    <a class="more_2">更多产品</a>
+                    <div class="more_2_list">
+                        <div class="more_2_list_head">更多产品</div>
+                        <div class="more_2_list_more">
+                            <a href="http://music.baidu.com/" target="_blank" class="more_2_list_a_1"><span></span>音乐</a>
+                            <a href="http://image.baidu.com/" target="_blank" class="more_2_list_a_2"><span></span>图片</a>
+                            <a href="http://zhidao.baidu.com/" target="_blank" class="more_2_list_a_3"><span></span>知道</a>
+                            <a href="http://wenku.baidu.com/" target="_blank" class="more_2_list_a_4"><span></span>文库</a>
+                            <a href="http://top.baidu.com/" target="_blank" class="more_2_list_a_5"><span></span>风云榜</a>
+                            <a href="https://www.baidu.com/more/" target="_blank" class="more_2_list_a_6">全部产品>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-header">
+                <!--移动端头部-->
+                <div class="phone-header-weather">
+                    <!--移动端头部-天气-->
+                    <div class="icon-weather-default"></div>
+                    <div class="weather-num">17°</div>
+                    <div class="weather-status">
+                        <p>深圳</p>
+                        <p>64&nbsp;良</p>
+                    </div>
+                </div>
+                <div class="phone-header-login">
+                    <!--移动端头部-登陆按钮-->
+                    <a class="icon-login" href="//m.baidu.com/usrprofile?action=home&amp;model=user&amp;ori=index">
+                        <img src="../Image/baidu/icon-down.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!--页面内容-->
+            <img src="../Image/baidu/baidu_logo.png" alt="baidu" title="百度一下，你就知道。" />
+            <!--百度logo-->
+            <form action="http://www.baidu.com/s" method="get" target="_blank">
+                <!--搜索输入栏-->
+                <div class="content_input">
+                    <input class="content_input" type="text" name="wd" maxlength="100" />
+                    <span class="camera"></span>
+                </div>
+                <button type="submit">百度一下</button>
+            </form>
+        </div>
+
+        <div class="phone-content">
+            <!--移动端页面内容-->
+            <div class="phone-content-logo">
+                <!--百度logo-->
+                <img src="https://m.baidu.com/static/index/plus/plus_logo.png" alt="baidu" title="百度一下，你就知道。">
+            </div>
+            <form data-formposition="i" class="se-form focus" action="http://m.baidu.com/s" method="get" autocomplete="off">
+                <div class="con-wrap">
+                    <!--搜索输入栏-->
+                    <input type="text" autocomplete="off" autocorrect="off" maxlength="64" name="word" class="se-input" data-sug="1" value="只适配了400px宽度的设备，其他同理可得">
+                    <div class="se-inner">
+                        <div class="callicon-wrap">
+                            <div class="baiduapp-icon">
+                            </div>
+                        </div>
+                        <!--搜索框按钮-->
+                        <button id="index-bn" class="se-bn" type="submit">百度一下</button>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="phone-content-nav">
+                <!--移动端页面内容下的导航条-->
+                <div id="ns-swipe" class="ns-swipe">
+                    <div class="ns-swipe-wrap">
+                        <div class="ns-swipe-item">
+                            <a class="ns-item">
+                                <i class="ns-focus ns-icon"></i>
+                                <span class="ns-text">关注</span>
+                            </a>
+                            <a class="ns-item" href="http://m.news.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1">
+                                <i class="ns-news ns-icon"></i>
+                                <span class="ns-text">新闻</span>
+                            </a>
+                            <a class="ns-item" href="http://dushu.m.baidu.com">
+                                <i class="ns-novel ns-icon"></i>
+                                <span class="ns-text">小说</span>
+                            </a>
+                            <a class="ns-item" href="http://video.m.baidu.com/?from=wise_nav">
+                                <i class="ns-video ns-icon"></i>
+                                <span class="ns-text">视频</span>
+                            </a>
+                            <a class="ns-item" href="https://m.nuomi.com/?cid=wise_shouye_nuomi">
+                                <i class="ns-life ns-icon"></i>
+                                <span class="ns-text">糯米</span>
+                            </a>
+                            <a class="ns-item" href="http://map.baidu.com/mobile/webapp/index/index?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%40320_1001%2Cta%40iphone_2_6.0_3_537&amp;bd_page_type=1">
+                                <i class="ns-map ns-icon"></i>
+                                <span class="ns-text">地图</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!--页面底部-->
+        <p class="footer-qrcode">
+            <!--手机百度二维码-->
+            <img src="../Image/baidu/baidu_qrcode.png" />
+            <span>手机百度</span>
+        </p>
+        <p class="footer-help">
+            <!--帮助内容-->
+            <a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+            <a href="http://home.baidu.com/" target="_blank">关于百度</a>
+            <a href="http://ir.baidu.com/" target="_blank">About  Baidu</a>
+            <a href="http://e.baidu.com/?refer=888" target="_blank">百度推广</a>
+        </p>
+        <p class="footer-police">
+            <!--网警信息-->
+            &nbsp;©2016&nbsp;Baidu
+            <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com/" target="_blank">意见反馈</a>
+            京ICP证030173号
+            <img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/copy_rignt_24.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">京公网安备11000002000001号</a>
+            <img src="http://www.beian.gov.cn/img/beianbgs.png" />
+        </p>
+    </div>
+
+    <div class="baidu-news">
+        <!--移动端新闻模块-->
+        <div class="baidu-news-1">
+            <!--移动端新闻模块-1-->
+            <div class="rec-item news-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=11903122012511274177&n_type=0&p_from=2">
+                    <div class="text-content">
+                        <!--新闻模块-标题-->
+                        <h2>
+                            KD对激将法自动免疫 灰熊该用帕森斯换安东尼？
+                            <span class="hotRec hotRec-1"></span>
+                        </h2>
+                    </div>
+                    <div class="pic-content">
+                        <!--新闻模块-配图-->
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2852400348,934055157&amp;fm=170&amp;s=84806AB048007CC80685476B0300A076&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2869089344,940364784&amp;fm=170&amp;s=1600D403560736ED441F9CA70300702A&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2832436903,912591229&amp;fm=170&amp;s=6980ED1241EEDCED0C7570D60200C0B2&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                    </div>
+                    <div class="news-from">
+                        <!--新闻模块-来源-->
+                        <span class="src-net">腾讯体育</span>
+                        <span class="src-time">02-08</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="baidu-news-1">
+            <!--移动端新闻模块-1-->
+            <div class="rec-item news-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=11903122012511274177&n_type=0&p_from=2">
+                    <div class="text-content">
+                        <!--新闻模块-标题-->
+                        <h2>
+                            KD对激将法自动免疫 灰熊该用帕森斯换安东尼？
+                            <span class="hotRec hotRec-1"></span>
+                        </h2>
+                    </div>
+                    <div class="pic-content">
+                        <!--新闻模块-配图-->
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2852400348,934055157&amp;fm=170&amp;s=84806AB048007CC80685476B0300A076&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2869089344,940364784&amp;fm=170&amp;s=1600D403560736ED441F9CA70300702A&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2832436903,912591229&amp;fm=170&amp;s=6980ED1241EEDCED0C7570D60200C0B2&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                    </div>
+                    <div class="news-from">
+                        <!--新闻模块-来源-->
+                        <span class="src-net">腾讯体育</span>
+                        <span class="src-time">02-08</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="baidu-news-1">
+            <!--移动端新闻模块-1-->
+            <div class="rec-item news-item">
+                <a href="https://m.baidu.com/feed/data/landingpage?nid=11903122012511274177&n_type=0&p_from=2">
+                    <div class="text-content">
+                        <!--新闻模块-标题-->
+                        <h2>
+                            KD对激将法自动免疫 灰熊该用帕森斯换安东尼？
+                            <span class="hotRec hotRec-1"></span>
+                        </h2>
+                    </div>
+                    <div class="pic-content">
+                        <!--新闻模块-配图-->
+                        <div class="img-wrap">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2852400348,934055157&amp;fm=170&amp;s=84806AB048007CC80685476B0300A076&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2869089344,940364784&amp;fm=170&amp;s=1600D403560736ED441F9CA70300702A&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                        <div class="img-wrap">
+                            <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2832436903,912591229&amp;fm=170&amp;s=6980ED1241EEDCED0C7570D60200C0B2&amp;w=218&amp;h=146&amp;img.JPG">
+                        </div>
+                    </div>
+                    <div class="news-from">
+                        <!--新闻模块-来源-->
+                        <span class="src-net">腾讯体育</span>
+                        <span class="src-time">02-08</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

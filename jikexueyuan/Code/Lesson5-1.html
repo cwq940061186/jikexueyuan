@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>将0~100分学员以10分为界，分为十段，然后计算出该生为数字几等生</title>
+    <meta charset="utf-8" />
+    <style>
+        /*网页主体*/
+        .warpper form {
+            background:rgb(240,240,240);
+            padding:50px;
+            font-size:12px;
+            width: 300px;
+            margin: 300px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="warpper">
+        <!--网页框架-->
+        <form class="warpper-main">
+            <!--网页主体-->
+            <h3>成绩查询器</h3>
+            <input type="text" id="username" placeholder="请输入0到100的分值" />
+            <input type="button" value="提交" onclick="myTest()" />
+            <p>测试结果：<span id="answer"></span></p>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function myTest() {
+            var val = document.getElementById("username").value;
+            console.log(val);//在控制台打印出答案
+            if (!val.trim()) {
+                answer = "空值无法查询噢";
+            } else if (val <= 100 && val >= 90) {
+                answer = "该生为一等生";
+            } else if (val < 90 && val >= 80) {
+                answer = "该生为二等生";
+            } else if (val < 80 && val >= 70) {
+                answer = "该生为三等生";
+            } else if (val < 70 && val >= 60) {
+                answer = "该生为四等生";
+            } else if (val < 60 && val >= 50) {
+                answer = "该生为五等生";
+            } else if (val < 50 && val >= 40) {
+                answer = "该生为六等生";
+            } else if (val < 40 && val >= 30) {
+                answer = "该生为七等生";
+            } else if (val < 30 && val >= 20) {
+                answer = "该生为八等生";
+            } else if (val < 20 && val >= 10) {
+                answer = "该生为九等生";
+            } else if (val < 10 && val >= 0) {
+                answer = "该生为十等生";
+            } else {
+                answer = "请输入正确的学生成绩（0~100分值）";
+            }
+            document.getElementById("answer").innerHTML = answer;//把答案输出到页面
+        }
+    </script>
+</body>
+</html>

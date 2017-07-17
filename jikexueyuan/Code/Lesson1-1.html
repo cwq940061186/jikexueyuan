@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>百度一下，你就知道。</title>
+    <link rel="shortcut icon" href="../Image/baidu_shortcut.ico" /><!--引入icon，作为网页标签的icon-->
+    <link rel="stylesheet" href="../CSS/baidu.css" /><!--引入外部CSS-->
+
+</head>
+<body>
+    <div class="wrapper">
+        <!--编程习惯：使用div作为一个副容器。-->
+        <header>
+            <!--顶部导航栏-->
+            <!--使用ul标签也同样可以达到效果，但使用H5新增的header标签会使代码更语义化-->
+            <!--Web语义化：是指使用语义恰当的标签，使页面有良好的结构，页面元素有含义，能够让人和搜索引擎都容易理解。-->
+            <nav>
+                <a href="http://www.nuomi.com/?cid=002540" target="_blank">糯米</a>
+                <a href="http://news.baidu.com/" target="_blank">新闻</a>
+                <a href="http://www.hao123.com/" target="_blank">hao123</a>
+                <a href="http://map.baidu.com/" target="_blank">地图</a>
+                <a href="http://v.baidu.com/" target="_blank">视频</a>
+                <a href="http://tieba.baidu.com/" target="_blank">贴吧</a>
+                <a class="h_a7" href="javascript:;">设置</a>
+                <a class="h_a8" href="javascript:;">更多</a>
+            </nav>
+            <br /><hr /><!--下划线-->
+        </header>
+
+        <div class="content">
+            <!--页面内容-->
+            <img src="../Image/baidu_logo.png" alt="baidu" title="百度一下，你就知道。" />
+            <!--百度logo-->
+            <form action="http://www.baidu.com/s" method="get" target="_blank">
+                <!--搜索输入栏-->
+                <span>
+                    <input type="text" name="wd" maxlength="100" />
+                    <span class="camera"></span>
+                </span>
+                <button type="submit">百度一下</button>
+            </form>
+        </div>
+
+        <footer>
+            <!--页面底部-->
+            <p class="copy-right">
+                <!--帮助内容-->
+                <a href="https://www.baidu.com/cache/sethelp/index.html" target="_blank">设为首页</a>
+                &nbsp;©2016&nbsp;Baidu
+                <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/" target="_blank">意见反馈</a>
+                <span>京ICP证030173号</span>
+                <img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/copy_rignt_24.png" height=13 />
+            </p>
+            <p class="police">
+                <!--网警信息-->
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank"><img src="http://www.beian.gov.cn/img/beianbgs.png" height=13 />&nbsp;京公网安备11000002000001号</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>

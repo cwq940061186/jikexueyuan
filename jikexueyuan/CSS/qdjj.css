@@ -1,0 +1,235 @@
+﻿body {
+    font-size: 12px;
+    position: relative;
+    margin: 10px 8px 20px;
+    padding: 0px;
+    background: url(../Image/qdjj/beijing.jpg) repeat;
+}
+
+/*让主体内容居中*/
+.table_center {
+    margin:0 auto;
+}
+
+/*警示性文字的颜色*/
+.asterisk, .warn {
+    color:rgb(255,0,0);
+}
+
+/*提示性文字的颜色*/
+.info {
+    color: rgb(0,0,255);
+}
+
+ /*整体框架*/
+.warpper {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px;
+    border: 0;
+    width: 710px;
+    background-color: rgb(255,255,255);
+}
+
+/*网页头部*/
+.header {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    border: 0;
+    position: relative;
+    text-align: center;
+}
+
+.table_top {
+    padding: 0px;
+    margin: 0 auto;
+    border: 0;
+    width: 710px;
+    border-spacing: 0; /*太尼玛关键了，这个就是可以去掉表格之间的间隔*/
+}
+
+    .table_top tbody {
+        border: 0;
+        width: 710px;
+        height: 82px;
+    }
+
+    .table_top tr {
+        padding: 0;
+        border: none;
+    }
+
+.table_top_1, .table_top_4 {
+    line-height: 0;
+    padding: 0;
+    border: none;
+    width: 29px;
+    height: 28px;
+    text-decoration: none;
+}
+
+    .table_top_1 img, .table_top_4 img {
+        vertical-align: top; /*未解决：3像素bug*/
+        display: block; /*未解决：3像素bug*/
+        margin: 0;
+        padding: 0px 0px 54px;
+        border: 0;
+        width: 29px;
+        height: 28px;
+        text-decoration: none;
+    }
+
+.table_top_2 {
+    padding: 0px;
+    border: 0;
+    width: 220px;
+    height: 76px;
+    text-decoration: none;
+}
+
+    .table_top_2 img {
+        margin: 3px 0px;
+        /*padding: 0px 40px 0px 0px;*/
+        border: 0;
+        width: 180px;
+        height: 76px;
+        float: left;
+        text-decoration: none;
+    }
+
+.table_top_3 {
+    padding: 70px 0px 0px;
+    border: 0;
+    width: 432px;
+    height: 12px;
+}
+
+    .table_top_3 a {
+        float: right;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+
+.table_top a:link, .table_top a:visited, .table_top a:hover, .table_top a:active {
+    color: rgb(255,0,153);
+}
+
+/*网页标题*/
+.table_title {
+    width:710px;
+    padding:20px 0px;
+    text-align: center;
+    display:inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*网页表格*/
+.main {
+    width:90%;
+    margin:0 auto;
+}
+
+.table_form {
+    margin: 0 auto; /*让表格左右居中*/
+    width:100%;
+    line-height:18px;
+    border-collapse: collapse;
+    border-left: 1px solid rgb(204,204,204);/*调整后让表格更表观*/
+    border-top: 1px solid rgb(204,204,204);
+}
+
+.table_form tbody{
+    padding:0px 35px;
+    width:640px;
+}
+
+.table_form td {
+    border-right: 1px solid rgb(204,204,204);
+    border-bottom: 1px solid rgb(204,204,204);
+}
+
+.table_form_text {
+    text-align: center;
+    
+}
+.table_form_classify {
+    background-color:rgb(238,238,238);
+}
+
+.table_form_classify span{
+    margin-left:13px;
+    color:rgb(0,51,153);
+    font-weight:bold;
+}
+
+.table_form .table_form_describe {
+    text-align:right;
+    width:132px;
+}
+
+.table_form .table_form_option {
+    width:496px;
+}
+
+.tableBorder td{
+    border: 0;
+}
+
+.table_form_button {
+    vertical-align:middle;
+    text-align:center;
+    padding:40px;
+}
+
+/*网页脚部*/
+.table_footer {
+    padding: 0px;
+    margin: 0 auto;
+    border: 0;
+    width: 710px;
+    border-spacing: 0px;
+}
+
+    .table_footer tbody {
+        border: 0;
+        width: 710px;
+        height: 46px;
+    }
+
+    .table_footer tr {
+        padding: 0;
+        border: none;
+    }
+
+.table_footer_1, .table_footer_4 {
+    line-height: 0;
+    padding: 0;
+    border: none;
+    width: 29px;
+    height: 28px;
+    text-decoration: none;
+}
+
+    .table_footer_1 img, .table_footer_3 img {
+        vertical-align:bottom; /*未解决：3像素bug*/
+        display: block; /*未解决：3像素bug*/
+        margin: 0;
+        padding: 17px 0px 0px;
+        border: 0;
+        width: 29px;
+        height: 28px;
+        text-decoration: none;
+    }
+
+.table_footer_2 {
+    vertical-align:top;
+    text-align:center;
+    padding: 0px 0px 34px;
+    border: 0;
+    width: 654px;
+    height: 12px;
+}

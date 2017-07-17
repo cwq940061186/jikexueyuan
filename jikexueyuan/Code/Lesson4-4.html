@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="../Content/bootstrap.css" />
+</head>
+<body>
+    <div class="warpper">
+        <div class="header">
+        </div>
+        <div class="content">
+            <h4>
+                1、HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？
+            </h4>
+            <h6>
+                答案解析：
+            </h6>
+            <p>
+                HTML5不基于SGML，因此不需要对DTD进行引用，但是需要DOCTYPE来规范浏览器的行为（让浏览器按照他们应该的方式来运行）而HTML4.01基于SGML，所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+            </p>
+            <h4>
+                2、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+            </h4>
+            <h6>
+                答案解析：
+            </h6>
+            <p>
+                <ul>
+                    <li>行内元素：a  b  span  img  input  select  strong</li>
+                    <li>块级元素：div  ul  ol  li  dl  dt  dd  h1  h2  h3  h4  p  等</li>
+                    <li>空元素：&lt;br&gt;  &lt;hr&gt;  &lt;img&gt;  &lt;link&gt; &lt;meta&gt;</li>
+                </ul>
+            </p>
+            <h4>
+                3、页面导入样式时，使用link和@import有什么区别？
+            </h4>
+            <h6>
+                答案解析：
+            </h6>
+            <p>
+                <ol>
+                    <li>link属于XHTML标签，而@import是css提供的；</li>
+                    <li>页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载；</li>
+                    <li>@import只在IE5以上才能识别，而link是XHTML标签，无兼容问题；</li>
+                    <li>link方式的样式的权重高于@import的权重。</li>
+                </ol>
+            </p>
+            <h4>
+                4、html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？
+            </h4>
+            <h6>
+                答案解析：
+            </h6>
+            <p>
+                新特性，新增元素：
+                <ol>
+                    <li>内容元素：article、footer、header、nav、section</li>
+                    <li>表单控件：calendar、date、time、email、url、search</li>
+                    <li>控件元素：webworker，websockt，Geolocation</li>
+                </ol>
+                移除元素：
+                <ol>
+                    <li>显现层元素：basefont，big，center，font，s，strike，tt，u</li>
+                    <li>性能较差元素：frame，frameset，noframes</li>
+                </ol>
+                处理兼容问题有两种方式：
+                <ol>
+                    <li>IE6/IE7/IE8支持通过document方法产生的标签，利用这一特性让这些浏览器支持HTML5新标签。</li>
+                    <li>使用是html5shim框架</li>
+                </ol>
+                另外，DOCTYPE声明的方式是区分HTML和HTML5标志的一个重要因素，此外，还可以根据新增的结构，功能元素来加以区分。
+            </p>
+            <h4>
+                5、如何区分 HTML 和 HTML5？
+            </h4>
+            <h6>
+                答案解析：
+            </h6>
+            <p>
+                <ol>
+                    <li></li>
+                    <li></li>
+                </ol>
+                <ol>
+                    <li>
+                        在文档类型声明上不同：
+                        <span>HTML是很长的一段代码，很难记住，而HTML5却只有简简单单的声明，方便记忆。</span>
+                    </li>
+                    <li>
+                        在结构语义上不同：
+                        <span>
+                            HTML：没有体现结构语义化的标签，通常都是这样来命名的&lt;div id="header"&gt; &lt;/div&gt;，这样表示网站的头部。
+                            HTML5：在语义上却有很大的优势。提供了一些新的标签，比如：&lt;header&gt; &lt;article&gt; &lt;footer&gt;
+                        </span>
+                    </li>
+
+                </ol>
+            </p>
+            <h4>
+                1.HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？
+            </h4>
+            <h6>
+                答案解析：
+            </h6>
+            <p>
+                HTML5不基于SGML，因此不需要对DTD进行引用，但是需要DOCTYPE来规范浏览器的行为（让浏览器按照他们应该的方式来运行）而HTML4.01基于SGML，所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿/*网页框架以及主体*/
+body {
+    background: #e6e6e6;
+}
+
+.warpper {
+    height: 100%;
+    max-width: 192px;
+}
+
+.warpper-main {
+    margin: 300px 0 0 300px;
+    display: inline-block;
+}
+
+/*网页内容以及按钮*/
+.resWin {
+    width: 192px;
+    height: 96px;
+}
+
+    .resWin p {
+        width: 192px;
+        height: 48px;
+        line-height: 50px;
+        margin: 0;
+        background: #ffffff;
+    }
+
+.main-b {
+    display: inline-block;
+    float: left;
+}
+
+.b-divide, .b-reduce, .b-multiply, .b-one, .b-two, .b-three, .b-four, .b-five, .b-six, .b-seven, .b-eight, .b-nine, .b-dot, .b-plus, .b-zero, .b-value, .b-reset, .b-reset, .b-del, .b-cha, .b-rem {
+    width: 48px;
+    height: 48px;
+}

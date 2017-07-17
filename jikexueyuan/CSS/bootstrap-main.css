@@ -1,0 +1,45 @@
+﻿body {
+    overflow-x: hidden;
+    background-color: rgb(240,240,240);
+}
+
+/*网页框架*/
+.warpper {
+    margin: 0 10px;
+}
+
+/*网页logo*/
+.wrapper-logo {
+    position: relative;
+    margin: 50px 10px 20px;
+    top: 0px;
+    left: 0px;
+}
+
+    .wrapper-logo p {
+        position: absolute;
+        font-size: 46px;
+        display: inline-block;
+        bottom: -16px;
+        margin-left: 20px;
+    }
+
+    .wrapper-logo img {
+        width: 130px;
+    }
+
+/*网页标签页*/
+.wrapper .nav {
+    margin-bottom: 20px;
+}
+
+/*网页主体内容-左侧导航栏*/
+.wrapper-main-list .list-group {
+    margin-bottom: 0;
+}
+
+/*网页主体内容-底部页码*/
+.wrapper-main-data nav {
+    position: absolute;
+    right: 20px;
+}

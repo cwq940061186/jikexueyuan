@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>开发新版极客学院首页</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="//g.alicdn.com/thx/cube/1.3.2/cube.min.css" />
+    <!--注意！此网页引入了cube库，将导致原始样式被格式化-->
+    <link rel="stylesheet" href="/CSS/jikexueyuan.css" />
+</head>
+<body>
+    <div class="warpper">
+        <!--网页框架-->
+        <div class="header">
+            <!--网页头部-->
+            <div class="header_contect">
+                <!--头部左上角内容-->
+                <a href="http://www.jikexueyuan.com" class="logo"><img src="http://e.jikexueyuan.com/headerandfooter/images/logo.png?t=1483671031000" height="40" width="109"></a>
+                <nav class="header_nav">
+                    <!--网页头部导航栏-->
+                    <ul class="header_nav_ul">
+                        <!--导航栏ul-->
+                        <li>首页</li>
+                        <li>
+                            <!--导航栏-职业学院meun-->
+                            职业学院<a class="arrow_icon"></a>
+                            <div class="submenu header_nav_ul_school">
+                                <h6>前端学院</h6>
+                                <a href="http://www.jikexueyuan.com/zhiye/web">
+                                    <i class="nav_ul_school_web_icon"></i>Web 前端工程师
+                                </a>
+                                <a href="http://www.jikexueyuan.com/zhiye/wechatapp">
+                                    <i class="nav_ul_school_wechat_icon"></i>微信小程序工程师
+                                </a>
+                                <h6>后端学院</h6>
+                                <a href="http://www.jikexueyuan.com/zhiye/python">
+                                    <i class="nav_ul_school_python_icon"></i>Python Web工程师
+                                </a>
+                                <a href="http://www.jikexueyuan.com/zhiye/go">
+                                    <i class="nav_ul_school_go_icon"></i>Go语言工程师
+                                </a>
+                                <h6>移动学院</h6>
+                                <a href="http://www.jikexueyuan.com/zhiye/android">
+                                    <i class="nav_ul_school_android_icon"></i>Android工程师
+                                </a>
+                                <a href="http://www.jikexueyuan.com/zhiye/ios">
+                                    <i class="nav_ul_school_ios_icon"></i>iOS工程师
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <!--导航栏-会员课程menu-->
+                            会员课程<a class="arrow_icon"></a>
+                            <div class="submenu header_nav_ul_vip">
+                                <a href="http://www.jikexueyuan.com/course/">
+                                    <i class="kck-icon"></i>课程库
+                                    <span>2500+</span>
+                                </a>
+                                <a href="http://ke.jikexueyuan.com/zhiye/">
+                                    <i class="zyljt-icon"></i>职业路径图
+                                    <span>9</span>
+                                </a>
+                                <a href="http://www.jikexueyuan.com/path/">
+                                    <i class="zstxt-icon"></i>知识体系图
+                                    <span>24</span>
+                                </a>
+                                <a href="http://ke.jikexueyuan.com/xilie/">
+                                    <i class="xlkc-icon"></i>系列课程
+                                    <span>101</span>
+                                </a>
+                                <a href="http://www.jikexueyuan.com/tag/">
+                                    <i class="kcbq-icon"></i>课程标签
+                                    <span>4000+</span>
+                                </a>
+                                <a href="http://www.jikexueyuan.com/vip/">
+                                    <i class="vip-icon"></i>VIP会员购买
+                                    <span>30/月  260/年</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <!--导航栏-极客社区menu-->
+                            极客社区<a class="arrow_icon"></a>
+                            <div class="submenu header_nav_ul_vip">
+                                <a href="http://wenda.jikexueyuan.com">
+                                    <i class="jswd-icon"></i>技术问答
+                                    <span>20000+</span>
+                                </a>
+                                <a href="http://wiki.jikexueyuan.com">
+                                    <i class="wiki-icon"></i>Wiki
+                                    <span>351</span>
+                                </a>
+                                <a href="http://qun.jikexueyuan.com">
+                                    <i class="sq-icon"></i>社群
+                                    <span>7000+</span>
+                                </a>
+                                <a href="http://download.jikexueyuan.com">
+                                    <i class="zygx-icon"></i>资源下载
+                                    <span>3000+</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_function">
+                    <!--网页头部-右上角工具栏-->
+                    <span class="function_search function_icon">
+                    </span>
+
+                    <span class="function_qrcode function_icon">
+                        <div class="submenu function_qrcode_hover">
+                            <span class="function_arrow_icon"></span>
+                            <img src="http://e.jikexueyuan.com/headerandfooter/images/heade-rwm.png?t=1483671031000">
+                        </div>
+                    </span>
+
+                    <span class="function_login function_icon">
+                        <div class="submenu function_login_hover">
+                            <span class="function_arrow_icon"></span>
+                            <ul class="function_login_list">
+                                <li>
+                                    <a href="http://passport.jikexueyuan.com/sso/reg_phone" class="reg-btn">注册</a>|<a href="http://passport.jikexueyuan.com/sso/login" class="login-btn">登录</a>
+                                </li>
+                                <li>
+                                    <a href="http://passport.jikexueyuan.com/sso/login"><i class="xxzx-icon"></i>学习中心</a>
+                                </li>
+                                <li>
+                                    <a href="http://passport.jikexueyuan.com/sso/login"><i class="grzy-icon"></i>个人主页</a>
+                                </li>
+                                <li>
+                                    <a href="http://passport.jikexueyuan.com/sso/login"><i class="xxtz-icon"></i>消息通知</a>
+                                </li>
+                                <li>
+                                    <a href="http://passport.jikexueyuan.com/sso/login"><i class="zhsz-icon"></i>账号设置</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="pager">
+            <!--网页主体-->
+            <div class="pager_carousel">
+                <!--网页主体-轮播栏-->
+                <div class="pager_carousel_main">
+                    <!--网页主体-轮播栏-主体-->
+                    还没学到JS，，咨询过老师可以暂时不做轮播图，学到JS，利用JS的知识再回头做
+                </div>
+                <div class="pager_carousel_login">
+                    <!--网页主体-轮播栏-登陆窗口-->
+                    <div class="pager_carousel_login_userInfo">
+                        <a href="http://my.jikexueyuan.com/setting/user">
+                            <img src="http://s1.jikexueyuan.com/index/images/headpic_8ce0f6d.jpg" class="userImg">
+                        </a>
+                        <span class="pager_carousel_login_userName">Hello,</span>
+                        <p class="pager_carousel_login_userStatus">欢迎成为极客一员</p>
+                    </div>
+                    <a href="javascript:;" class="loginOn diaLoginBtn">登录</a>
+                    <a href="http://passport.jikexueyuan.com/sso/reg_phone" class="registerNow">免费注册</a>
+
+                </div>
+                <div class="pager_carousel_promotion">
+                    <!--网页主体-轮播栏-活动-->
+                    <a href="http://www.baidu.com/cb.php?c=IgF_pyfqnHmsPHDsPHR0IZ0qnfK9ujYzn164nHmL0Aw-5HcdPWR4Pj60TAq15HcLPHmkPWb0T1dhnWwhmW0knHRkPHmsuhn30AwY5HDYrjRkPHDYnWD0IgF_5y9YIZ0lQzqVUvIdpi4JpyV-XZN-XgN9UB4WUvYE5vGGpvNxmv7VTA7Guv3qUyqMIy-Luychph-ouNq_UvP9IA-EUWdLILIxpy4bug9xmvuxTh-MpZwxpyd9uvN_py4oFhGGpvNxmvq8IAN8IjYkP10knjT0ThfqnHD0mhYqnfKsTWYs0ZNGujY1PWfkPjcv0AqGujYknjDsPHm40APGujYvrjfYnfKEIv3qn0KsXHYznjm0mLFW5HRsPHR1" target="_blank">
+                        <img src="http://ubmcmm.baidustatic.com/media/v1/0f000neUwEv-7A5cSaNhe0.png" title="web前端面授班" alt="web前端面授班" border="0" height="160" width="240">
+                    </a>
+                </div>
+            </div>
+            <div class="pager_job">
+                <!--网页主体-工作栏目-->
+                <a class="pager_job_php" href="http://j.jikexueyuan.com/train/php?jike_campaign=jiuyeban&jike_location=www_index_jiuye_imagelink_1&jike_content=161130" target="_blank">
+                    <img src="/Image/jikexueyuan/9_php_d5fcdb8.png" />
+                    <p>PHP工程师就业班</p>
+                </a>
+                <a class="pager_job_web" href="http://j.jikexueyuan.com/train/web?jike_campaign=jiuyeban&jike_location=www_index_jiuye_imagelink_2&jike_content=161130" target="_blank">
+                    <img src="/Image/jikexueyuan/4_html5_9ab5f1c.png" />
+                    <p>WEB大前端工程师就业班</p>
+                </a>
+                <a class="pager_job_ui" href="http://j.jikexueyuan.com/train/ux?jike_campaign=jiuyeban&jike_location=www_index_jiuye_imagelink_3&jike_content=161130" target="_blank">
+                    <img src="/Image/jikexueyuan/UI_a5eba34.png" />
+                    <p>UI/UX设计师就业班</p>
+                </a>
+                <a class="pager_job_android" href="http://j.jikexueyuan.com/train/android?jike_campaign=jiuyeban&jike_location=www_index_jiuye_imagelink_4&jike_content=161130" target="_blank">
+                    <img src="/Image/jikexueyuan/1_android_d6730f3.png" />
+                    <p>Android工程师就业班</p>
+                </a>
+                <a class="pager_job_ios" href="http://j.jikexueyuan.com/train/ios?jike_campaign=jiuyeban&jike_location=www_index_jiuye_imagelink_5&jike_content=161130" target="_blank">
+                    <img src="/Image/jikexueyuan/2_iOS_5e77ff4.png" />
+                    <p>iOS工程师就业班</p>
+                </a>
+                <a class="pager_job_javaweb" href="http://j.jikexueyuan.com/train/javaweb?jike_campaign=jiuyeban&jike_location=www_index_jiuye_imagelink_6&jike_content=161130" target="_blank">
+                    <img src="/Image/jikexueyuan/10_javaweb_26f34e5.png" />
+                    <p>Java Web工程师就业班</p>
+                </a>
+            </div>
+
+            <div class="pager_class">
+                <!--网页主体-学习课程栏目-->
+                <ul class="pager_class_ul">
+                    <li class="pager_class_ul_li pager_class_ul_as">
+                        <a href="http://www.jikexueyuan.com/zhiye/course/52.html?type=2" target="_blank">
+                            <img src="/Image/jikexueyuan/2fdc2822-bdaf-4fc1-83fd-9ac33066fea5.jpg">
+                            <div class="pager_class_ul_li_container">
+                                <p class="font_title">再见 Eclipse - Android Studio 高效开发</p>
+                                <p class="font_info">6小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                                <span class="font_price">69.00</span>
+                                <span class="font_throught">¥99.00</span>
+                                <span class="font_num">38人学习</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pager_class_ul_li pager_class_ul_vue">
+                        <a href="http://www.jikexueyuan.com/zhiye/course/12.html?type=8" target="_blank">
+                            <img src="/Image/jikexueyuan/attach-6ae2b991-803f-4b63-bda9-89434d70d665.jpg">
+                            <div class="pager_class_ul_li_container">
+                                <p class="font_title">Vue.js前端框架详解－基础&amp;进阶&amp;实战</p>
+                                <p class="font_info">22小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                                <span class="font_price">499.00</span>
+                                <span class="font_throught">¥1300.00</span>
+                                <span class="font_num">224人学习</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pager_class_ul_li pager_class_ul_python">
+                        <a href="http://www.jikexueyuan.com/zhiye/course/37.html?type=4" target="_blank">
+                            <img src="/Image/jikexueyuan/401c1254-71e1-4a1b-8767-98760edc1778.jpg">
+                            <div class="pager_class_ul_li_container">
+                                <p class="font_title">Python利器，超凡蜘蛛带你“爬”世界</p>
+                                <p class="font_info">37小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                                <span class="font_price">349.00</span>
+                                <span class="font_throught">¥499.00</span>
+                                <span class="font_num">185人学习</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pager_class_ul_li pager_class_ul_fenda">
+                        <a href="http://www.jikexueyuan.com/zhiye/course/47.html?type=16" target="_blank">
+                            <img src="/Image/jikexueyuan/1371d887-2d0a-4aa8-b8b3-cd235e5b79af.png">
+                            <div class="pager_class_ul_li_container">
+                                <p class="font_title">微信小程序进阶实战之分答应用开发</p>
+                                <p class="font_info">5小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                                <span class="font_price">79.00</span>
+                                <span class="font_throught">¥99.00</span>
+                                <span class="font_num">77人学习</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="pager_college">
+                <!--网页主体-职业学院栏目-->
+                <p class="pager_college_title">
+                    职业学院
+                </p>
+                <ul class=".pager_college_ul">
+                    <li class="pager_college_ul_li pager_college_ul_web">
+                        <a href="http://www.jikexueyuan.com/zhiye/web" target="_blank">
+                            <img src="/Image/jikexueyuan/bgweb_054d9d5.jpg" />
+                            <span>Web 前端工程师</span>
+                        </a>
+
+                    </li>
+                    <li class="pager_college_ul_li pager_college_ul_python">
+                        <a href="http://www.jikexueyuan.com/zhiye/python" target="_blank">
+                            <img src="/Image/jikexueyuan/bgpython_c21a999.jpg" />
+                            <span>Python Web 工程师</span>
+                        </a>
+
+                    </li>
+                    <li class="pager_college_ul_li pager_college_ul_go">
+                        <a href="http://www.jikexueyuan.com/zhiye/go" target="_blank">
+                            <img src="/Image/jikexueyuan/bggo_6ac4e5b.jpg" />
+                            <span>Go 语言工程师</span>
+                        </a>
+
+                    </li>
+                    <li class="pager_college_ul_li pager_college_ul_ios">
+                        <a href="http://www.jikexueyuan.com/zhiye/ios" target="_blank">
+                            <img src="/Image/jikexueyuan/bgios_cadb5b0.jpg" />
+                            <span>iOS 工程师</span>
+                        </a>
+
+                    </li>
+                    <li class="pager_college_ul_li pager_college_ul_wechat">
+                        <a href="http://www.jikexueyuan.com/zhiye/wechatapp" target="_blank">
+                            <img src="/Image/jikexueyuan/bgwechat_2357330.jpg" />
+                            <span>Web 前端工程师</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pager_vip">
+                <!--网页主体-会员课程栏目-->
+                <p class="pager_vip_title">
+                    会员课程
+                </p>
+                <ul>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/android" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/1_android_d6730f3.png">
+                            <p>Android</p>
+                            <span>90门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/ios" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/2_iOS_5e77ff4.png">
+                            <p>iOS</p>
+                            <span>51门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/swift" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/3_swift_79f5d60.png">
+                            <p>Swift语言</p>
+                            <span>11门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/html5" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/4_html5_9ab5f1c.png">
+                            <p>HTML5开发</p>
+                            <span>116门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/javascript" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/5_javascript_83e4b7f.png">
+                            <p>JavaScript</p>
+                            <span>90门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_right">
+                        <a href="http://www.jikexueyuan.com/path/nodejs" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/6_js_c56bccc.png">
+                            <p>Node.js</p>
+                            <span>90门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/c" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/7_c_07f10c0.png">
+                            <p>C语言</p>
+                            <span>17门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/java" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/8_java_89b7c2c.png">
+                            <p>Java语言</p>
+                            <span>17门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/php" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/9_php_d5fcdb8.png">
+                            <p>PHP语言</p>
+                            <span>23门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/javaweb" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/10_javaweb_26f34e5.png">
+                            <p>JavaWeb</p>
+                            <span>64门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_left">
+                        <a href="http://www.jikexueyuan.com/path/python" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/11_Python_d253c3e.png">
+                            <p>Python</p>
+                            <span>38门课程</span>
+                        </a>
+                    </li>
+                    <li class="pager_vip_ul_right">
+                        <a href="http://www.jikexueyuan.com/path/cocos2d-x" target="_blank">
+                            <img src="http://s1.jikexueyuan.com/index/images/12_cocos2d_037cd04.png">
+                            <p>Cocos2d-x游戏开发</p>
+                            <span>89门课程</span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="pager_vip_all" href="http://www.jikexueyuan.com/course/">全部会员课程</a>
+            </div>
+
+            <div class="pager_story">
+                <!--网页主体-学员故事栏目-->
+                <p class="pager_story_title">
+                    学员故事:还没学到JS，，咨询过老师可以暂时不做轮播图，学到JS再回头做
+                </p>
+
+            </div>
+
+            <div class="pager_partner">
+                <!--网页主体-合作企业栏目-->
+                <p class="pager_partner_title">
+                    合作企业
+                </p>
+                <ul>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#microsoft"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#tencent"></a></li>
+                    <li><a target="_blank" href="http://zt.jikexueyuan.com/qcloud"></a></li>
+                    <li><a target="_blank" href="http://zt.jikexueyuan.com/qualcomm"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#cocos"></a></li>
+                    <li class="pager_partner_ul_right"><a target="_blank" href="http://www.jikexueyuan.com/partner/#amd"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#xunfei"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#tuling"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#tingyun"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#juhe"></a></li>
+                    <li><a target="_blank" href="http://www.jikexueyuan.com/partner/#bootstrap"></a></li>
+                    <li class="pager_partner_ul_right"><a target="_blank" href="http://www.jikexueyuan.com/partner/#cloudstack"></a></li>
+                </ul>
+                <a class="pager_partner_more" target="_blank" href="/partner">更多合作企业</a>
+            </div>
+        </div>
+        <div class="footer">
+            <!--网页底部-->
+            <div class="footer_contect">
+                <!--底部主体内容-->
+                <div class="footer_contect_list">
+                    <div class="footer_contect_logo">
+                        <img src="http://e.jikexueyuan.com/headerandfooter/images/jk-logo-footer.png?t=1483950493000">
+                        <p>极客学院，编程是一种信仰！</p>
+                    </div>
+                    <ul>
+                        <!--底部主体内容-列表-->
+                        <content>职业学院</content>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/zhiye/web">Web前端工程师</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/zhiye/python">Python Web工程师</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/zhiye/go">Go语言工程师</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/zhiye/ios">iOS工程师</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/zhiye/wechatapp">微信小程序工程师</a></li>
+                    </ul>
+                    <ul>
+                        <content>会员课程</content>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/course/">课程库</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/path/">知识体系图</a></li>
+                        <li><a target="_blank" href="http://ke.jikexueyuan.com/zhiye/">职业路径图</a></li>
+                        <li><a target="_blank" href="http://ke.jikexueyuan.com/xilie/">系列课程</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/tag/">课程标签</a></li>
+                    </ul>
+                    <ul>
+                        <content>极客社区</content>
+                        <li><a target="_blank" href="http://wenda.jikexueyuan.com/">技术问答</a></li>
+                        <li><a target="_blank" href="http://wiki.jikexueyuan.com/">Wiki</a></li>
+                        <li><a target="_blank" href="http://download.jikexueyuan.com/">资源下载</a></li>
+                        <li><a target="_blank" href="http://qun.jikexueyuan.com/">社群</a></li>
+                    </ul>
+                    <ul>
+                        <content>其他</content>
+                        <li><a target="_blank" href="http://help.jikexueyuan.com/">关于我们</a></li>
+                        <li><a target="_blank" href="http://help.jikexueyuan.com/join.html">加入我们</a></li>
+                        <li><a target="_blank" href="http://j.jikexueyuan.com/evangelist/apply">讲师合作</a></li>
+                        <li><a target="_blank" href="http://help.jikexueyuan.com/contact.html">联系我们</a></li>
+                        <li><a target="_blank" href="http://www.jikexueyuan.com/friendlink.html">友情链接</a></li>
+                    </ul>
+                    <div class="footer_contect_server">
+                        <!--底部主体内容-服务-->
+                        <p class="footer_contect_server_tel">服务热线:400-678-8266</p>
+                        <div class="footer_contect_down footer_contect_ios">
+                            <img src="http://e.jikexueyuan.com/headerandfooter/images/app.png?t=1483950493000" class="downqrcode" alt="下载二维码"> iPhone
+                        </div>
+                        <div class="footer_contect_down footer_contect_android">
+                            <img src="http://e.jikexueyuan.com/headerandfooter/images/app.png?t=1483950493000" class="downqrcode" alt="下载二维码"> Android
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <!--网站copyright信息-->
+                Copyright © 2013-2017&nbsp;<a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+                <a href="http://qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="down-wechat"></a>
+                <a href="http://weibo.com/jikexueyuan" target="_blank" class="down-sina"></a>
+                <a style="display:block; margin: 15px auto 0" id="___szfw_logo___" href="https://credit.szfw.org/CX20160908025320080267.html" target="_blank">
+                    <img src="http://icon.szfw.org/cert.png?t=1483950493000" width="60px" border="0">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

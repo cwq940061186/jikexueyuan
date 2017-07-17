@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用JS开发简易计算器</title>
+    <meta charset="utf-8" />
+    <style>
+        /*网页主体*/
+        .warpper form {
+            background: rgb(240,240,240);
+            padding: 50px;
+            font-size: 12px;
+            width: 500px;
+            margin: 300px auto;
+        }
+
+            .warpper form input, select {
+                margin-bottom: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="warpper">
+        <!--网页框架-->
+        <form class="warpper-main">
+            <!--网页主体-->
+            <h3>简易计算器：</h3>
+
+            <!--第一个值-->
+            <input type="text" id="val1" placeholder="" />
+            <span>请输入数字A</span><br />
+
+            <!--运算符号-->
+            <select name="" id="sign">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <span>请选择运算符号</span><br />
+
+            <!--第二个值-->
+            <input type="text" id="val2" placeholder="" />
+            <span>请输入数字B（作除数时请不要输入0）</span> <br />
+
+            <input type="button" value="提交" onclick="calculator()" />
+            <p>运算结果：<span id="result"></span></p>
+        </form>
+    </div>
+
+    <script>
+        //获取输入内容
+        function calculator() {
+            var val1 = document.getElementById("val1").value;
+            var val2 = document.getElementById("val2").value;
+            var sign = document.getElementById("sign").value;
+
+            var result = "";
+            //排除空值
+            if (!val1.trim() || !val2.trim() || !sign.trim()) {
+                result = "空值无法查询噢";
+            } else if (isNaN(val1) || isNaN(val2)) {
+                result = "请输入正确的数字";
+            } else {
+                if (sign == "+") {
+                    result = parseFloat((Number(val1) + Number(val2)).toFixed(8));
+                } else if (sign == "-") {
+                    result = parseFloat((val1 - val2).toFixed(8));
+                } else if (sign == "*") {
+                    result = parseFloat((val1 * val2).toFixed(8));
+                } else if (sign == "/") {
+                    if (val2 == 0) {
+                        result = "NAN";
+                    } else {
+                        result = parseFloat((val1 / val2).toFixed(8));
+                    }
+                } else {
+                    result = "请输入正确的运算符号";
+                }
+            }
+            console.log(result);//在控制台打印出答案
+            document.getElementById("result").innerHTML = result;//把答案输出到页面
+        }
+    </script>
+</body>
+</html>

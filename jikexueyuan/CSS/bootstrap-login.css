@@ -1,0 +1,28 @@
+﻿body {
+    margin: 0 auto;
+}
+
+/*网页logo*/
+.wrapper-logo {
+    text-align: center;
+}
+
+    .wrapper-logo img {
+        margin: 150px auto 50px;
+    }
+
+/*网页登陆窗口-主体*/
+.wrapper-input-main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+    .wrapper-input-main form {
+        background: rgb(240,240,240);
+        padding: 20px 20px 55px;
+    }
+
+/*登陆按钮*/
+.btn-default {
+    float: right;
+}

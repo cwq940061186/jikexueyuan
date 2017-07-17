@@ -1,0 +1,146 @@
+﻿html, body {
+    text-align: center;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.warpper {
+    background-color: rgb(200,200,200);
+    text-align: center;
+    display: inline-block;
+    width: 660px;
+}
+
+/*正常盒子*/
+.hr {
+    display: inline-block;
+    width: 640px;
+}
+
+.box_1 {
+    text-align: center;
+}
+
+
+.box_1_1 {
+    background-color: rgb(220,220,220);
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid rgb(100,100,100);
+}
+
+.inside_1 {
+    background-color: rgb(255,255,255);
+    width: 600px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+/*怪异盒子*/
+.box_2 {
+    text-align: center;
+}
+
+.box_2_1 {
+    background-color: rgb(220,220,220);
+    width: 640px;
+    height: 340px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid rgb(100,100,100);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgb(200,200,255);
+}
+
+.inside_2 {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background-color: rgb(255,255,255);
+    width: 600px;
+    height: 300px;
+}
+
+    .inside_2 img {
+        width: 50px;
+    }
+
+/*弹性布局以及colume分栏*/
+.col_1 {
+    margin: 50px;
+    column-rule-style: dotted;
+    column-gap: 100px;
+    -webkit-column-count: 2;
+}
+
+    .col_1 img {
+        width: 200px;
+    }
+
+/*用flex布局打横平方div*/
+.flex {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.flex_1 {
+    width: 640px;
+    display: -webkit-flex;
+    background-color: rgb(200,200,200);
+}
+
+.flex_1_1 {
+    height: 300px;
+    width: 30px;
+    -webkit-flex: 1;
+    background-color: rgb(200,0,0);
+}
+
+.flex_1_2 {
+    height: 100px;
+    width: 100px;
+    -webkit-flex: 1;
+    background-color: rgb(0,0,200);
+}
+
+.flex_1_3 {
+    height: 30px;
+    width: 300px;
+    -webkit-flex: 1;
+    background-color: rgb(0,200,0);
+}
+
+/*用flex布局打竖平方div*/
+.flex_2 {
+    height: 300px;
+    width: 640px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    background-color: rgb(200,200,200);
+}
+
+.flex_2_1 {
+    height: 300px;
+    width: 30px;
+    -webkit-flex: 1;
+    background-color: rgb(200,0,0);
+}
+
+.flex_2_2 {
+    height: 100px;
+    width: 100px;
+    -webkit-flex: 1;
+    background-color: rgb(0,0,200);
+}
+
+.flex_2_3 {
+    height: 30px;
+    width: 300px;
+    -webkit-flex: 1;
+    background-color: rgb(0,200,0);
+}

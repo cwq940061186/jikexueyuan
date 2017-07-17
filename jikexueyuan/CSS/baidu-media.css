@@ -1,0 +1,295 @@
+﻿body {
+    min-width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: rgb(248,248,248);
+}
+
+.header .nav, .content, .footer {
+    display: none;
+}
+
+/*初始化margin*/
+body, h1, h2, h3, p, div, ol, ul, input, button, a, i, span {
+    margin: 0;
+    text-decoration: none;
+}
+
+.header {
+    background: rgb(248,248,248);
+}
+
+/*移动端头部*/
+.phone-header {
+    height: 35px;
+    margin: 0 auto 9px;
+}
+
+
+.phone-header-weather div {
+    display: inline-block;
+}
+
+.phone-header-weather {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-weather-default {
+    color: #b7babe;
+    font-size: 28px;
+    position: relative;
+    top: 0;
+    width: auto;
+    line-height: 28px;
+    margin-left: -1px;
+}
+
+.weather-num {
+    font-size: 29px;
+    color: #999;
+    padding-left: 4px;
+    padding-right: 3px;
+}
+
+.weather-status p {
+    height: 14px;
+    line-height: 14px;
+    font-size: 10px;
+    color: #999;
+}
+
+/*移动端头部-登陆按钮*/
+.phone-header-login {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.icon-login img {
+    width: 25px;
+}
+
+/*移动端页面内容*/
+.phone-content-logo {
+    height: 57px;
+    padding-bottom: 17px;
+}
+
+    /*百度logo*/
+    .phone-content-logo img {
+        height: 100%;
+        max-width: 217px;
+    }
+
+/*搜索输入栏*/
+.se-form {
+    margin: 0 16px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+    border-radius: 2px;
+}
+
+.con-wrap {
+    display: -webkit-box;
+    width: 100%;
+}
+
+.se-input {
+    display: block;
+    margin: 0;
+    padding: 7px 42px 7px 6px;
+    border: 0;
+    border-radius: 0;
+    resize: none;
+    height: 45px;
+    font-size: 18px;
+    line-height: 28px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-flex: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.se-inner {
+    width: 82px;
+    position: relative;
+}
+
+.callicon-wrap {
+    position: absolute;
+    top: 13px;
+    left: -38px;
+    z-index: 10;
+}
+
+.baiduapp-icon {
+    height: 20px;
+    width: 14px;
+    background: url(../Image/baidu/mmsicon.png) 1px 0 no-repeat;
+    background-size: 33px 19px;
+}
+
+/*搜索框按钮*/
+#index-bn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 82px;
+    height: 45px;
+    background: #38f;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 45px;
+    letter-spacing: -1px;
+    font-size: 16px;
+    border-top: 1px solid #38f;
+    border-bottom: 1px solid #38f;
+    box-sizing: inherit;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-shadow: none;
+}
+
+/*移动端页面内容下的导航条*/
+.phone-content-nav {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ns-swipe {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 19px;
+    padding-bottom: 30px;
+}
+
+.ns-swipe-wrap {
+    width: 3200px;
+}
+
+.ns-swipe-item {
+    width: 400px;
+    left: 0px;
+}
+
+    .ns-swipe-item a {
+        float: left;
+        margin: 0 20px;
+    }
+
+.ns-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    background: url(../Image/baidu/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-size: 22px auto;
+}
+
+.ns-focus {
+    background-position: 0 -264px;
+}
+
+.ns-news {
+    background-position: 0 -396px;
+}
+
+.ns-novel {
+    background-position: 0 -330px;
+}
+
+.ns-video {
+    background-position: 0 -462px;
+}
+
+.ns-life {
+    background-position: 0 -418px;
+}
+
+.ns-map {
+    background-position: 0 -308px;
+}
+
+.ns-text {
+    display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1;
+    color: #999;
+}
+
+/*移动端新闻模块*/
+.baidu-news {
+    background: rgb(255,255,255);
+    text-align: left;
+}
+
+.rec-item a {
+    margin: 0 16px;
+    padding: 10px 0 13px;
+    display: block;
+}
+
+.news-item .text-content {
+    margin-bottom: 3px;
+}
+
+/*新闻模块-标题*/
+.news-item h2 {
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.img-wrap {
+    display: inline-block;
+    width: 32%;
+    margin-right: 1px;
+    height: 0;
+    padding-top: 21.99%;
+    position: relative;
+    vertical-align: top;
+}
+
+    .img-wrap img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+/*新闻模块-来源*/
+.news-from {
+    margin-top: 9px;
+    line-height: 12px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+    .news-from span {
+        margin-right: 8px;
+        font-size: 13px;
+        color: #999;
+        display: inline-block;
+    }

@@ -1,0 +1,35 @@
+﻿body {
+    font-family: 'Microsoft YaHei';
+    background-color: rgb(180, 229, 247);
+}
+
+.t-table {
+    padding-top: 150px; /*因为单靠html+css无法设置上下居中，就给padding-top设定一个值让表格下来*/
+}
+
+caption {
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+table {
+    text-align: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto; /*让表格左右居中*/
+    border-collapse: collapse; /*border-collapse 属性设置表格的边框是否被合并为一个单一的边框，还是像在标准的 HTML 中那样分开显示。*/
+    border-left: 1px solid #888;/*调整后让表格更表观*/
+    border-top: 1px solid #888;
+}
+
+th, td {
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding: 20px 35px; /*控制单元格大小*/
+}
+
+th {
+    background: rgb(121, 202, 255);
+    font-weight: bold; /*让th字体变粗*/
+}

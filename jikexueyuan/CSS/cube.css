@@ -1,0 +1,138 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*网页主体*/
+.warpper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*魔方主体*/
+.cube {
+    transform-style: preserve-3d;
+    animation: change 6s ease-in-out infinite;
+}
+
+    .cube div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        /*opacity: 0.8;*//*透明度，方便调试*/
+    }
+
+.plane {
+    top: -154px;
+    left: -154px;
+}
+
+.plane_lefttop, .plane_top, .plane_righttop {
+    top: 2px;
+}
+
+.plane_left, .plane_center, .plane_right {
+    top: 104px;
+}
+
+.plane_leftbottom, .plane_bottom, .plane_rightbottom {
+    top: 206px;
+}
+
+.plane_lefttop, .plane_left, .plane_leftbottom {
+    left: 2px;
+}
+
+.plane_top, .plane_center, .plane_bottom {
+    left: 104px;
+}
+
+.plane_righttop, .plane_right, .plane_rightbottom {
+    left: 206px;
+}
+
+/*魔方顶部*/
+.cube_top {
+    transform: rotateX(90deg) translateZ(52px) translateY(-104px);
+}
+
+    .cube_top div {
+        background-color: rgb(10,17,255);
+    }
+
+/*魔方底部*/
+.cube_bottom {
+    transform: rotateX(90deg) translateZ(-260px) translateY(-104px);
+}
+
+    .cube_bottom div {
+        background-color: rgb(7,149,5);
+    }
+
+/*魔方左侧*/
+.cube_left {
+    transform: rotateY(90deg) translateZ(-52px) translateX(-104px);
+}
+
+    .cube_left div {
+        background-color: rgb(247,97,2);
+    }
+
+/*魔方右侧*/
+.cube_right {
+    transform: rotateY(90deg) translateZ(260px) translateX(-104px);
+}
+
+    .cube_right div {
+        background-color: rgb(146,7,2);
+    }
+
+/*魔方正面*/
+.cube_front {
+    transform: translateZ(156px);
+}
+
+    .cube_front div {
+        background-color: rgb(255,255,255);
+    }
+
+/*魔方背部*/
+.cube_back {
+    transform: translateZ(-156px);
+}
+
+    .cube_back div {
+        background-color: rgb(255,252,5);
+    }
+
+.codename {
+    position:absolute;
+    right:50px;
+    bottom:100px;
+}
+/*魔方动画*/
+@keyframes change {
+    0% {
+        transform: translateZ(-10em) rotateX(0deg) rotateY(0deg);
+    }
+
+    33% {
+        transform: translateZ(-10em) rotateX(120deg) rotateY(240deg);
+    }
+
+    66% {
+        transform: translateZ(-10em) rotateX(240deg) rotateY(480deg);
+    }
+
+    100% {
+        transform: translateZ(-10em) rotateX(360deg) rotateY(720deg);
+    }
+}

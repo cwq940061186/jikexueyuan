@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>开发完整计算器</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/calculator.css" /><!--引入外部css文件-->
+</head>
+<body>
+    <div class="warpper">
+        <!--网页框架-->
+        <form class="warpper-main">
+            <!--网页主体-->
+            <div class="resWin">
+                <p align="right"><span id="result"></span></p>
+                <p align="right"><span id="calNum"></span></p>
+            </div>
+            <!--显示窗口-->
+            <input type="button" value="清空" id="b-reset" class="b-reset main-b" />
+            <input type="button" value="删除" id="b-del" class="b-del main-b" />
+            <input type="button" value="+/-" id="b-cha" class="b-cha main-b" />
+            <input type="button" value="求余" id="b-rem" class="b-rem main-b" />
+            <!--第一排-->
+            <input type="button" value="7" id="b-seven" class="b-seven main-b" />
+            <input type="button" value="8" id="b-eight" class="b-eight main-b" />
+            <input type="button" value="9" id="b-nine" class="b-nine main-b" />
+            <input type="button" value="+" id="b-plus" class="b-plus main-b" />
+            <!--第二排-->
+            <input type="button" value="4" id="b-four" class="b-four main-b" />
+            <input type="button" value="5" id="b-five" class="b-five main-b" />
+            <input type="button" value="6" id="b-six" class="b-six main-b" />
+            <input type="button" value="-" id="b-reduce" class="b-reduce main-b" />
+            <!--第三排-->
+            <input type="button" value="1" id="b-one" class="b-one main-b" />
+            <input type="button" value="2" id="b-two" class="b-two main-b" />
+            <input type="button" value="3" id="b-three" class="b-three main-b" />
+            <input type="button" value="*" id="b-multiply" class="b-multiply main-b" />
+            <!--第四排-->
+            <input type="button" value="0" id="b-zero" class="b-zero main-b" />
+            <input type="button" value="." id="b-dot" class="b-dot main-b" />
+            <input type="button" value="=" id="b-value" class="b-value main-b" />
+            <input type="button" value="/" id="b-divide" class="b-divide main-b" />
+            <!--第五排-->
+        </form>
+    </div>
+    <script type="text/javascript" src="../JavaScript/calculator.js"></script><!--引入外部js文件-->
+</body>
+</html>

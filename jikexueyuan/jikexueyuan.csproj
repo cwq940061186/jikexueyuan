@@ -43,6 +43,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.1.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.1.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.1.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.1.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.1.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -170,16 +198,118 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Code\Lesson3-4.html" />
+    <Content Include="Code\Lesson2-4.html" />
+    <Content Include="Code\Lesson2-3.html" />
+    <Content Include="Code\Lesson1-2.html" />
+    <Content Include="Code\Lesson1-1.html" />
+    <Content Include="Code\Lesson2-1.html" />
+    <Content Include="Code\Lesson2-2.html" />
+    <Content Include="Code\Lesson3-1.html" />
+    <Content Include="Code\Lesson3-2.html" />
+    <Content Include="Code\Lesson3-3.html" />
+    <Content Include="Code\Lesson4-1.html" />
+    <Content Include="Code\Lesson4-2-main.html" />
+    <Content Include="Code\Lesson4-2-login.html" />
+    <Content Include="Code\Lesson4-3.html" />
+    <Content Include="Code\Lesson4-4.html" />
+    <Content Include="Code\Lesson5-1.html" />
+    <Content Include="Code\Lesson5-3.html" />
+    <Content Include="Code\Lesson5-2.html" />
+    <Content Include="Code\Lesson6-1.html" />
+    <Content Include="Code\Lesson6-2.html" />
+    <Content Include="Code\text.html" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CSS\baidu4.css" />
+    <Content Include="CSS\baidu-media.css" />
+    <Content Include="CSS\baidu3.css" />
+    <Content Include="CSS\baidu2.css" />
+    <Content Include="CSS\baidu.css" />
+    <Content Include="CSS\bootstrap-login.css" />
+    <Content Include="CSS\box.css" />
+    <Content Include="CSS\bull.css" />
+    <Content Include="CSS\calculator.css" />
+    <Content Include="CSS\cross.css" />
+    <Content Include="CSS\cube.css" />
+    <Content Include="CSS\hao123.css" />
+    <Content Include="CSS\jikexueyuan.css" />
+    <Content Include="CSS\layout.css" />
+    <Content Include="CSS\qdjj.css" />
+    <Content Include="CSS\bootstrap-main.css" />
+    <Content Include="CSS\StyleSheet2.css" />
+    <Content Include="CSS\table.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Image\Asgardia.ico" />
+    <Content Include="Image\baidu\baidu_camera.png" />
+    <Content Include="Image\baidu\baidu_logo.png" />
+    <Content Include="Image\baidu\baidu_qrcode.png" />
+    <Content Include="Image\baidu\baidu_shortcut.ico" />
+    <Content Include="Image\baidu\mmsicon.png" />
+    <Content Include="Image\baidu\more_bang.png" />
+    <Content Include="Image\baidu\beianbgs.png" />
+    <Content Include="Image\baidu\copy_rignt.png" />
+    <Content Include="Image\baidu\more_image.png" />
+    <Content Include="Image\baidu\more_music.png" />
+    <Content Include="Image\baidu\more_tuiguang.png" />
+    <Content Include="Image\baidu\more_wenku.png" />
+    <Content Include="Image\baidu\more_zhidao.png" />
+    <Content Include="Image\baidu\ns_diff_color_v2_5abf864a.png" />
+    <Content Include="Image\frog.jpg" />
+    <Content Include="Image\baidu\icon-down.png" />
+    <Content Include="Image\jikexueyuan\10_javaweb_26f34e5.png" />
+    <Content Include="Image\jikexueyuan\11_Python_d253c3e.png" />
+    <Content Include="Image\jikexueyuan\12_cocos2d_037cd04.png" />
+    <Content Include="Image\jikexueyuan\1371d887-2d0a-4aa8-b8b3-cd235e5b79af.png" />
+    <Content Include="Image\jikexueyuan\1_android_d6730f3.png" />
+    <Content Include="Image\jikexueyuan\2fdc2822-bdaf-4fc1-83fd-9ac33066fea5.jpg" />
+    <Content Include="Image\jikexueyuan\2_iOS_5e77ff4.png" />
+    <Content Include="Image\jikexueyuan\3_swift_79f5d60.png" />
+    <Content Include="Image\jikexueyuan\401c1254-71e1-4a1b-8767-98760edc1778.jpg" />
+    <Content Include="Image\jikexueyuan\4_html5_9ab5f1c.png" />
+    <Content Include="Image\jikexueyuan\5_javascript_83e4b7f.png" />
+    <Content Include="Image\jikexueyuan\6_js_c56bccc.png" />
+    <Content Include="Image\jikexueyuan\7_c_07f10c0.png" />
+    <Content Include="Image\jikexueyuan\8_java_89b7c2c.png" />
+    <Content Include="Image\jikexueyuan\9_php_d5fcdb8.png" />
+    <Content Include="Image\jikexueyuan\allicon.png" />
+    <Content Include="Image\jikexueyuan\allicon2.png" />
+    <Content Include="Image\jikexueyuan\allicon4.png" />
+    <Content Include="Image\jikexueyuan\app-icon.png" />
+    <Content Include="Image\jikexueyuan\attach-6ae2b991-803f-4b63-bda9-89434d70d665.jpg" />
+    <Content Include="Image\jikexueyuan\bggo_6ac4e5b.jpg" />
+    <Content Include="Image\jikexueyuan\bgios_cadb5b0.jpg" />
+    <Content Include="Image\jikexueyuan\bgpython_c21a999.jpg" />
+    <Content Include="Image\jikexueyuan\bgweb_054d9d5.jpg" />
+    <Content Include="Image\jikexueyuan\bgwechat_2357330.jpg" />
+    <Content Include="Image\jikexueyuan\cgo_e66208d.png" />
+    <Content Include="Image\jikexueyuan\cios_dc0ca8e.png" />
+    <Content Include="Image\jikexueyuan\cpython_5ed9df4.png" />
+    <Content Include="Image\jikexueyuan\cweb_2d70d0b.png" />
+    <Content Include="Image\jikexueyuan\cwechat_624099d.png" />
+    <Content Include="Image\jikexueyuan\login-icon.png" />
+    <Content Include="Image\jikexueyuan\p_microsoft_82f9a9a.png" />
+    <Content Include="Image\jikexueyuan\search-icon.png" />
+    <Content Include="Image\jikexueyuan\UI_a5eba34.png" />
+    <Content Include="Image\qdjj\beijing.jpg" />
+    <Content Include="Image\qdjj\bottom-left.jpg" />
+    <Content Include="Image\qdjj\bottom-right.jpg" />
+    <Content Include="Image\qdjj\qdjjlogo.jpg" />
+    <Content Include="Image\qdjj\top-left.jpg" />
+    <Content Include="Image\qdjj\top-right.jpg" />
+    <Content Include="Image\和我说话请投币.jpg" />
+    <Content Include="JavaScript\calculator.js" />
+    <Content Include="JavaScript\hao123.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -230,90 +360,105 @@
   <ItemGroup>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Confirm.aspx.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Confirm.aspx.designer.cs">
       <DependentUpon>Confirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Forgot.aspx.cs">
       <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Forgot.aspx.designer.cs">
       <DependentUpon>Forgot.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Lockout.aspx.cs">
       <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Lockout.aspx.designer.cs">
       <DependentUpon>Lockout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Manage.aspx.cs">
       <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Manage.aspx.designer.cs">
       <DependentUpon>Manage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\ManageLogins.aspx.cs">
       <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\ManageLogins.aspx.designer.cs">
       <DependentUpon>ManageLogins.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\ManagePassword.aspx.cs">
       <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\ManagePassword.aspx.designer.cs">
       <DependentUpon>ManagePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\OpenAuthProviders.ascx.cs">
       <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
       <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
     </Compile>
     <Compile Include="Account\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\RegisterExternalLogin.aspx.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\ResetPassword.aspx.cs">
       <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\ResetPassword.aspx.designer.cs">
       <DependentUpon>ResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
       <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
       <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
       <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
       <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
@@ -357,6 +502,7 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
@@ -364,6 +510,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
