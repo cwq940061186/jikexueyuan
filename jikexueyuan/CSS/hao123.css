@@ -1,14 +1,707 @@
-﻿body {
-
+﻿/*公共样式*/
+body {
+    background: #F9F9F9;
 }
 
-.main-head-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid #ccc;
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #f50;
+    }
+
+.wrapper {
+    width: 100%;
+}
+/*头部样式*/
+.wrapper-header {
     width: 100%;
     height: 60px;
-    background-color: #fcfcfc;
-    opacity: .2;
+    border-bottom: 1px solid #EEEEEF;
+    background: #F8F8F9;
+}
+
+.header-main {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+    .header-main .header-main-logo {
+        display: inline-block;
+        width: 168px;
+        height: 60px;
+        background: url(../img/hao123logo.png) no-repeat;
+        background-size: 168px 60px;
+        float: left;
+    }
+
+    .header-main #set-first {
+        display: inline-block;
+        width: 25px;
+        margin-top: 13px;
+        padding: 2px 5px;
+        float: left;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        background: #0AA770;
+    }
+
+    .header-main .local {
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        color: #999;
+        font-size: 12px;
+        float: left;
+        padding-left: 12px;
+    }
+
+    .header-main .local {
+        display: inline-block;
+    }
+
+        .header-main .local:hover {
+            background: #f1f1f1;
+        }
+
+        .header-main .local span {
+            display: inline-block;
+            width: 9px;
+            height: 6px;
+            background: url(../img/indexlg.png) no-repeat -52px -97px;
+            margin-left: 4px;
+        }
+
+    .header-main .weather {
+        display: inline-block;
+        height: 60px;
+        padding-left: 12px;
+        padding-right: 12px;
+        color: #999;
+        line-height: 60px;
+        float: left;
+        font-size: 12px;
+    }
+
+        .header-main .weather:hover {
+            background: #f1f1f1;
+        }
+
+        .header-main .weather .weather-icon {
+            background: url(../img/a1.png) 0 13px no-repeat;
+            display: inline-block;
+            width: 26px;
+            height: 60px;
+            margin-right: 3px;
+        }
+
+        .header-main .weather span {
+            vertical-align: middle;
+        }
+
+    .header-main .date,
+    .header-main .fortune {
+        font-size: 12px;
+        line-height: 60px;
+        display: inline-block;
+        color: #999;
+        height: 60px;
+        float: left;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+        .header-main .date:hover,
+        .header-main .fortune:hover {
+            background: #f1f1f1;
+        }
+
+    .header-main .userinfo {
+        float: right;
+        height: 60px;
+        line-height: 60px;
+    }
+
+        .header-main .userinfo li {
+            float: left;
+        }
+
+            .header-main .userinfo li:hover {
+                background: #f1f1f1;
+                height: 60px;
+            }
+
+        .header-main .userinfo a {
+            font-size: 12px;
+            color: #999;
+            padding-left: 8px;
+            padding-right: 8px;
+            display: inline-block;
+            height: 60px;
+        }
+
+/*主体内容样式*/
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+    /*搜索框部分*/
+    .container .search-box {
+        margin-top: 27px;
+        position: relative;
+        width: 1190px;
+    }
+
+        .container .search-box form {
+            width: 659px;
+            height: 46px;
+            margin: 0 auto;
+            left: 18px;
+            position: relative;
+        }
+
+            .container .search-box form input {
+                display: inline-block;
+                width: 539px;
+                height: 46px;
+                box-sizing: border-box;
+                float: left;
+                text-indent: 60px;
+                font-size: 16px;
+                outline: none;
+                border: 1px solid #666;
+            }
+
+        .container .search-box .button-wrapper {
+            right: 1px;
+            position: absolute;
+            border: 1px solid #666;
+            border-left-color: #999;
+        }
+
+        .container .search-box form .button {
+            border: 0px;
+            width: 118px;
+            height: 44px;
+            font-family: arial;
+            font-size: 16px;
+            color: #222;
+            background: #e6e6e6;
+            text-indent: 0px;
+            background-image: -webkit-linear-gradient(top,#fff 0,#e6e6e6 100%);
+        }
+
+        .container .search-box form button:hover {
+            background: url(../img/indexlg.png) -211px -230px no-repeat;
+        }
+
+        .container .search-box #search-type {
+            position: absolute;
+            left: 0;
+            width: 58px;
+            line-height: 46px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+            .container .search-box #search-type span {
+                display: inline-block;
+                font-size: 12px;
+                color: #666;
+            }
+
+            .container .search-box #search-type .arrow {
+                position: relative;
+                top: -1px;
+                left: -4px;
+                width: 9px;
+                height: 6px;
+                background: url(../img/indexlg.png) -52px -97px no-repeat;
+            }
+
+        .container .search-box #tabs {
+            position: absolute;
+            top: 45px;
+            border: 1px solid #666;
+            border-top: 0;
+            background: #fff;
+            display: none;
+            z-index: 100;
+        }
+
+            .container .search-box #tabs a {
+                color: #999;
+                display: block;
+                padding-left: 9px;
+                width: 45px;
+                height: 24px;
+                font-size: 12px;
+            }
+
+        .container .search-box .baidulogo {
+            display: block;
+            width: 120px;
+            height: 40px;
+            position: absolute;
+            top: 4px;
+            left: 132px;
+            background: url(../img/indexlg.png) -10px -212px no-repeat;
+        }
+
+#skin-item {
+    line-height: 65px;
+    height: 45px;
+    display: block;
+    width: 120px;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+    #skin-item li {
+        display: inline-block;
+    }
+
+        #skin-item li:first-child button {
+            width: 20px;
+            height: 20px;
+            border: 0 solid #07ac72;
+            border-radius: 50%;
+            background: #07ac72;
+        }
+
+        #skin-item li:nth-child(2) button {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 0 solid #EF3F9F;
+            border-radius: 50%;
+            background: #EF3F9F;
+        }
+
+        #skin-item li:nth-child(3) button {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 0 solid #34A3E6;
+            border-radius: 50%;
+            background: #34A3E6;
+        }
+
+        #skin-item li:last-child button {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 0 solid #7D7C7C;
+            border-radius: 50%;
+            background: #7D7C7C;
+        }
+
+.container .hot-search {
+    width: 623px;
+    height: 20px;
+    margin: 6px auto 19px;
+}
+
+    .container .hot-search ul li {
+        float: left;
+    }
+
+    .container .hot-search .title {
+        margin-right: 6px;
+    }
+
+        .container .hot-search .title a {
+            display: inline-block;
+            background: url(../img/indexlg.png) -159px -260px no-repeat;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            margin-top: 2px;
+        }
+
+    .container .hot-search .text {
+        margin-right: 20px;
+    }
+
+        .container .hot-search .text a {
+            font-size: 12px;
+            line-height: 20px;
+            color: #666;
+        }
+
+    .container .hot-search li a:hover {
+        color: #f50;
+        text-decoration: underline;
+    }
+
+/*导航栏部分样式*/
+.container #nav-type {
+    width: 100%;
+    height: 38px;
+    background: #FCFCFC;
+    border-top: 2px solid #099E6A;
+}
+
+    .container #nav-type li {
+        width: 111px;
+        height: 38px;
+        line-height: 38px;
+        float: left;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container #nav-type span {
+        top: 9px;
+        height: 20px;
+        width: 1px;
+        background: #eaeaea;
+    }
+
+    .container #nav-type li:first-child {
+        background: #0AA770;
+        width: 81px;
+    }
+
+        .container #nav-type li:first-child a {
+            color: #fff !important;
+        }
+
+    .container #nav-type li:last-child {
+        width: 110px;
+    }
+
+    .container #nav-type li a {
+        display: inline-block;
+        width: 100%;
+        height: 38px;
+        color: #000;
+        font-size: 16px;
+    }
+
+.container #nav-recommend {
+    width: 1188px;
+    margin-bottom: 10px;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ade0c1;
+    border-top: 1px solid #eaeaea !important;
+    position: relative;
+}
+
+.container #nav-recommend-title {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 80px;
+    color: #07AC72;
+    font-family: arial, "Hiragino Sans GB", "Hiragino Sans GB W3", 宋体;
+    font-size: 14px;
+}
+
+.container #nav-recommend span:nth-child(2) {
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 9px;
+    height: 20px;
+    width: 1px;
+    background: #eaeaea;
+    margin-right: 36px;
+}
+
+.container #nav-recommend li {
+    float: left;
+    margin-right: 36px;
+}
+
+    .container #nav-recommend li a {
+        color: #000;
+    }
+
+        .container #nav-recommend li a:hover {
+            color: #f50;
+            text-decoration: underline;
+        }
+
+/*主体左侧索引样式*/
+.container .left-info {
+    width: 278px;
+    border: 1px solid #CECECE;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.container .left-index {
+    padding: 9px 0 0 18px;
+    overflow: hidden;
+    background: #fff;
+}
+
+    .container .left-index span {
+        position: relative;
+        top: -1px;
+        margin: 0 5px;
+        color: #999;
+    }
+
+    .container .left-index li {
+        width: 128px;
+        margin-bottom: 6px;
+        float: left;
+        position: relative;
+    }
+
+        .container .left-index li a {
+            color: #333;
+        }
+
+            .container .left-index li a:hover {
+                color: #f50;
+                text-decoration: underline;
+            }
+
+    .container .left-index .index-icon {
+        position: relative;
+        display: inline-block;
+        top: 6px;
+        left: -3px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/indexicon.png) no-repeat;
+    }
+
+    .container .left-index .i-tv {
+        background-position: -20px -81px;
+    }
+
+    .container .left-index .i-game {
+        background-position: -19px -301px
+    }
+
+    .container .left-index .i-movie {
+        background-position: -20px -160px;
+    }
+
+    .container .left-index .i-comic {
+        background-position: -20px -381px;
+    }
+
+    .container .left-index .i-new {
+        background-position: -20px -100px;
+    }
+
+    .container .left-index .i-travel {
+        background-position: -20px -261px;
+    }
+
+    .container .left-index .i-caipiao {
+        background-position: -20px -21px;
+    }
+
+    .container .left-index .i-joke {
+        background-position: -20px -121px;
+    }
+
+    .container .left-index .i-sail {
+        background-position: -20px -281px;
+    }
+
+    .container .left-index .i-lot {
+        background-position: -20px -362px;
+    }
+
+/*主体右侧索引样式*/
+.container .right-info {
+    width: 898px;
+    background: #fcfcfc;
+    float: right;
+}
+
+.container #often-index {
+    background: #fff;
+    border: 1px solid #ade0c1;
+    position: relative;
+}
+
+    .container #often-index .mst-often-index {
+        padding: 8px 20px 8px 42px;
+        overflow: hidden;
+    }
+
+        .container #often-index .mst-often-index li {
+            float: left;
+            width: 16.66%;
+            height: 28px;
+        }
+
+        .container #often-index .mst-often-index a {
+            display: inline-block;
+            height: 20px;
+            color: #333;
+        }
+
+            .container #often-index .mst-often-index a:hover {
+                color: #f50;
+                text-decoration: underline;
+            }
+
+        .container #often-index .mst-often-index .baidu {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -198px;
+        }
+
+        .container #often-index .mst-often-index .xinlang {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -278px;
+        }
+
+        .container #often-index .mst-often-index .souhu {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -318px;
+        }
+
+        .container #often-index .mst-often-index .tengxun {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -38px;
+        }
+
+        .container #often-index .mst-often-index .wangyi {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -157px;
+        }
+
+        .container #often-index .mst-often-index .youku {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -398px;
+        }
+
+        .container #often-index .mst-often-index .tianmao {
+            padding-left: 25px;
+            background: url(../img/10138.2.png) no-repeat 2px 44%;
+        }
+
+        .container #often-index .mst-often-index .fenghuang {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -238px;
+        }
+
+        .container #often-index .mst-often-index .taobao {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) no-repeat 2px -358px;
+        }
+
+        .container #often-index .mst-often-index .freegame {
+            padding-left: 25px;
+            background: url(../img/game0331.png) 2px 44% no-repeat;
+        }
+
+        .container #often-index .mst-often-index .xiaogame {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) 2px 2px no-repeat;
+        }
+
+        .container #often-index .mst-often-index .tiyu {
+            padding-left: 25px;
+            background: url(../img/51619.png) 2px 44% no-repeat;
+        }
+
+        .container #often-index .mst-often-index .jingdong {
+            padding-left: 25px;
+            background: url(../img/21.1.png) 2px 44% no-repeat;
+        }
+
+        .container #often-index .mst-often-index .juhuasuan {
+            padding-left: 25px;
+            background: url(../img/8.411.png) 2px 44% no-repeat;
+        }
+
+        .container #often-index .mst-often-index .tejia {
+            padding-left: 25px;
+            background: url(../img/6282.png) 2px 44% no-repeat;
+        }
+
+        .container #often-index .mst-often-index .hao123 {
+            padding-left: 25px;
+            background: url(../img/1419.png) 2px 44% no-repeat;
+        }
+
+        .container #often-index .mst-often-index .qiche {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) 2px -518px no-repeat;
+        }
+
+        .container #often-index .mst-often-index .kaijiang {
+            padding-left: 25px;
+            background: url(../img/defaultIcon.png) 2px -558px no-repeat;
+        }
+
+    .container #often-index .gap {
+        width: 810px;
+        height: 1px;
+        background: #ececec;
+        margin: 0 auto;
+    }
+
+    .container #often-index .rec-often-index {
+        padding: 8px 20px 8px 42px;
+        overflow: hidden;
+    }
+
+        .container #often-index .rec-often-index li {
+            width: 16.66%;
+            float: left;
+            overflow: hidden;
+            height: 28px;
+        }
+
+.rec-often-index a {
+    display: inline-block;
+    height: 20px;
+    color: #333;
+}
+
+.container #often-index .rec-often-index a:hover {
+    color: #f50;
+    text-decoration: underline;
+}
+
+.container #often-index .setweb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    background: url(../img/indexlg.png) -316px -128px no-repeat;
+}
+
+.container #often-index .addweb {
+    border: 1px dotted #bbb;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 62px;
+    right: 44px;
+    background: url(../img/index_icon.png) -278px -396px no-repeat;
+}
+
+.rec-recommend-index li a {
+    color: #07AC72;
 }
