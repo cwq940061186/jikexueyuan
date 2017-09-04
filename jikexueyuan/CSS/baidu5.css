@@ -20,6 +20,8 @@ html, body {
 .header {
     overflow: hidden; /*清除浮动，为下级标签设置浮动做铺垫*/
     font-weight: bold;
+    border-bottom: 1px solid #ebebeb;
+    height: 33px;
 }
 
 /*移动端标签隐藏*/
@@ -29,34 +31,30 @@ html, body {
 
 .nav {
     position: relative;
-    margin-top: 19px;
     float: right; /*设置向右浮动*/
     width: 500px; /*设置nav标签的长度*/
-    *width: 535px;
+    height: 33px;
+    line-height: 20px;
 }
 
     .nav a {
         color: rgb(85,85,85);
+        height: 32px;
         margin-left: 19px; /*给每一个a标签的margin设一个19px的左宽度，可以作为各标签之间的间距。*/
     }
 
-/*让鼠标移动到链接上变色*/
-.nav_list:hover {
-    color: rgb(0,0,204);
-}
-
-.more_1_morelist {
+.nav-more {
     display: inline-block;
     /*兼容ie8*/
     *display: inline;
     zoom: 1;
 }
 
-.more_1 {
+.nav-more-title {
     font-weight: 400;
 }
 
-.nav .more_1_list {
+.nav .nav-more-list {
     display: none;
     position: fixed;
     /*兼容性*/
@@ -64,12 +62,20 @@ html, body {
     -webkit-box-shadow: rgb(209,209,209) 1px 1px 5px 0px;
     -moz-box-shadow: rgb(209,209,209) 1px 1px 5px 0px;
     filter: progid:DXI mageTransform.Microsoft.Shadow(color='rgb(209,209,209)', Direction=125, Strength=9);
-    right: 70px;
-    top: 45px;
     padding: 0px;
 }
 
-.more_1_list_arrows {
+.nav .nav-login-list {
+    top: 33px;
+    right: 122px;
+}
+
+.nav .nav-set-list {
+    top: 33px;
+    right: 74px;
+}
+
+.nav-more-arrows {
     width: 0px;
     height: 0px;
     /*兼容性*/
@@ -80,7 +86,7 @@ html, body {
 }
 
 /*设置下拉栏小箭头*/
-.more_1_list_arrows {
+.nav-more-arrows {
     width: 0;
     height: 0;
     font-size: 0;
@@ -92,7 +98,7 @@ html, body {
     margin-left: -9px;
 }
 
-    .more_1_list_arrows em, .more_1_list_arrows i {
+    .nav-more-arrows em, .nav-more-arrows i {
         width: 0;
         height: 0;
         font-size: 0;
@@ -103,17 +109,17 @@ html, body {
         border-style: dashed dashed solid;
     }
 
-    .more_1_list_arrows em {
+    .nav-more-arrows em {
         border-bottom-color: #d8d8d8;
         top: -1px;
     }
 
-    .more_1_list_arrows i {
+    .nav-more-arrows i {
         border-bottom-color: #fff;
         top: 0;
     }
 
-.nav .more_1_list a {
+.nav .nav-more-list a {
     display: block;
     color: rgb(0,0,0);
     padding: 5px 0px;
@@ -126,28 +132,28 @@ html, body {
     margin: 0px;
 }
 
-.more_1_list_more {
+.nav-more-list-more {
     border: 1px solid rgb(209,209,209);
 }
 
-.more_1_list_a_1:hover, .more_1_list_a_2:hover, .more_1_list_a_3:hover, .more_1_list_a_4:hover {
-    background-color: rgb(51,136,255);
-    color: rgb(255,255,255);
-}
+    .nav-more-list-more a:hover {
+        background-color: rgb(51,136,255);
+        color: rgb(255,255,255)
+    }
 
-.more_1_morelist:hover div {
+.nav-more:hover div {
     display: block;
     transition-delay: 1s;
 }
 
-.more_2_morelist {
+.nav-sidebar {
     display: inline-block;
     /*兼容ie8*/
     *display: inline;
     zoom: 1;
 }
 
-    .more_2_morelist .more_2 {
+    .nav-sidebar .nav-sidebar-title {
         display: inline-block;
         /*兼容ie8*/
         *display: inline;
@@ -156,14 +162,14 @@ html, body {
         font-weight: 400;
         vertical-align: middle;
         margin-left: 15px;
-        line-height: 24px; /*如何设置文字垂直居中，先把行高设置和外高一样，然后再设成垂直居中*/
-        height: 24px;
-        width: 60px;
+        line-height: 34px; /*如何设置文字垂直居中，先把行高设置和外高一样，然后再设成垂直居中*/
+        height: 38px;
+        width: 77px;
         color: rgb(255,255,255);
         background-color: rgb(51,136,255);
     }
 
-.more_2_list {
+.nav-sidebar-list {
     display: none;
     background-color: rgb(249,249,249);
     position: fixed;
@@ -177,24 +183,23 @@ html, body {
     border-left: 1px solid rgb(231,231,231);
 }
 
-    .more_2_list .more_2_list_head {
+    .nav-sidebar-list .nav-sidebar-list-head {
         position: relative;
         text-align: center;
-        padding-top: 9px;
         margin: 0px 9.5px;
-        height: 43px;
+        height: 33px;
         width: 66px;
         vertical-align: middle;
-        line-height: 43px;
+        line-height: 33px;
         border-bottom: 1px solid rgb(240,240,240);
     }
 
-    .more_2_list .more_2_list_more {
+    .nav-sidebar-list .nav-sidebar-list-more {
         position: relative;
         text-align: center;
     }
 
-        .more_2_list .more_2_list_more a {
+        .nav-sidebar-list .nav-sidebar-list-more a {
             display: inline-block;
             /*兼容ie8*/
             *display: inline;
@@ -205,18 +210,24 @@ html, body {
             color: rgb(102,102,102);
         }
 
-        .more_2_list .more_2_list_more span {
+        .nav-sidebar-list .nav-sidebar-list-more span {
             color: rgb(51,51,51);
         }
 
-.more_2_list_a_1, .more_2_list_a_2, .more_2_list_a_3, .more_2_list_a_4, .more_2_list_a_5 {
+.nav-sidebar-list-1,
+.nav-sidebar-list-2,
+.nav-sidebar-list-3,
+.nav-sidebar-list-4,
+.nav-sidebar-list-5,
+.nav-sidebar-list-6,
+.nav-sidebar-list-7 {
     margin: 0px 9.5px;
     border-bottom: 1px solid rgb(240,240,240);
     width: 66px;
     height: 76px;
 }
 
-.more_2_list_more span {
+.nav-sidebar-list-more span {
     margin: 10px 15px 5px 15px;
     width: 36px;
     height: 36px;
@@ -225,29 +236,37 @@ html, body {
 }
 
 
-.more_2_list .more_2_list_more .more_2_list_a_1 span {
-    background-image: url(../Image/baidu/more_music.png);
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-1 span {
+    background-image: url(/Image/baidu/more_bdbri.png);
     margin: 10px 13px 5px 13px;
     width: 40px;
 }
 
-.more_2_list .more_2_list_more .more_2_list_a_2 span {
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-2 span {
+    background-image: url(../Image/baidu/more_music.png);
+}
+
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-3 span {
     background-image: url(../Image/baidu/more_image.png);
 }
 
-.more_2_list .more_2_list_more .more_2_list_a_3 span {
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-4 span {
     background-image: url(../Image/baidu/more_zhidao.png);
 }
 
-.more_2_list .more_2_list_more .more_2_list_a_4 span {
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-5 span {
     background-image: url(../Image/baidu/more_wenku.png);
 }
 
-.more_2_list .more_2_list_more .more_2_list_a_5 span {
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-6 span {
     background-image: url(../Image/baidu/more_bang.png);
 }
 
-.more_2_list .more_2_list_more .more_2_list_a_6 {
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-7 span {
+    background-image: url(../Image/baidu/more_tuiguang.png);
+}
+
+.nav-sidebar-list .nav-sidebar-list-more .nav-sidebar-list-8 {
     display: inline-block;
     /*兼容ie8*/
     *display: inline;
@@ -256,12 +275,15 @@ html, body {
     white-space: nowrap; /*禁止换行*/
 }
 
-.more_2_morelist:hover div {
+.nav-sidebar:hover div {
     display: block;
     transition-delay: 1s;
 }
 
-header a:link, header a:visited, header a:active {
+header a:link,
+header a:visited,
+header a:active,
+header a:hover {
     color: rgb(0,0,0); /*百度首页上的这个链接，也是无论如何操作都是显示黑色。*/
 }
 
@@ -285,7 +307,7 @@ header a:link, header a:visited, header a:active {
         position: relative;
     }
 
-    .content .content_input {
+    .content .content-input {
         width: 539px;
         height: 34px;
         float: left;
@@ -305,7 +327,7 @@ header a:link, header a:visited, header a:active {
             background-position: 0 -20px;
         }
 
-    .content .content_input input {
+    .content .content-input input {
         display: inline-block;
         /*兼容ie8*/
         *display: inline;
@@ -332,7 +354,7 @@ header a:link, header a:visited, header a:active {
         outline: none;
     }
 
-        .content .content_input input:hover {
+        .content .content-input input:hover {
             border-color: rgb(153,153,153);
             border-bottom-color: rgb(179, 179, 179);
         }

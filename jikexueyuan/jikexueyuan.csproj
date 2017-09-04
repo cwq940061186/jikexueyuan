@@ -261,6 +261,7 @@
     <Content Include="Image\baidu\more_bang.png" />
     <Content Include="Image\baidu\beianbgs.png" />
     <Content Include="Image\baidu\copy_rignt.png" />
+    <Content Include="Image\baidu\more_bdbri.png" />
     <Content Include="Image\baidu\more_image.png" />
     <Content Include="Image\baidu\more_music.png" />
     <Content Include="Image\baidu\more_tuiguang.png" />
